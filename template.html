@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+<div class="header">
+    <h2>Checkpoint 2</h2>
+  </div>
+  
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>Paradigmas de Programação</h2>
+        <h5>Aula 13</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Referência da notícia + texto de como a notícia se relaciona com o que vimos em sala </p>
+      </div>
+      <div class="card">
+        <h2>Virtualização</h2>
+        <h5>Aula 14</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Referência da notícia + texto de como a notícia se relaciona com o que vimos em sala </p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>Sobre o Grupo</h2>
+        <div class="fakeimg" style="height:100px;">Image</div>
+        <ul>
+            <li>Membro 1</li>
+            <li>Membro 2</li>
+            <li>Membro 3</li>
+            <li>Membro 4</li>
+            <li>Membro 5</li>
+            <li>Membro 6</li>
+          </ul>
+      </div>
+      <div class="card">
+        <h3>Popular Post</h3>
+        <div class="fakeimg">Image</div><br>
+        <div class="fakeimg">Image</div><br>
+        <div class="fakeimg">Image</div>
+      </div>
+      <div class="card">
+        <h3>Siga-nos!</h3>
+        <ul>
+            <li><a href="https://github.com/oggvaldo">https://github.com/oggvaldo</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <h2>Digital House</h2>
+  </div>
+
+</body>
+</html>
