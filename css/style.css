@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: var(--title-color-light);
+}
+
+:root {
+    --base-color: #1f2276;
+    --body-color: #f9f9f9;
+    --title-color-light: #fff;
+    --title-color-second: #876bdc;
+    --text-color: #000;
+}
+
+body {
+    background: var(--body-color);
+    font: 500 1rem 'Roboto', sans-serif;
+    color: var(--text-color);
+}
+header,
+footer {
+    background: var(--base-color);
+    /*position: fixed;*/
+    width: 100%;
+}
+
+h1 {
+    color: var(--title-color-light);
+}
+
+.container {
+    margin: 0 7.68rem;
+}
+
+#header {
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo > a {
+    font: 700 1.75rem 'Montserrat', sans-serif;
+}
+span {
+    color: var(--title-color-second);
+}
+.menu {
+    font: 400 1rem 'Montserrat', sans-serif;
+    list-style-type: none;
+    display: flex;
+    gap: 3.1875rem;
+}
+.inicio {
+    background-color: rgb(11, 34, 58);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero {
+    margin: 9.375rem;
+}
+.inicio svg {
+}
+svg {
+    fill: var(--title-color-second);
+    height: 1.875rem;
+    width: 1.875rem;
+}
