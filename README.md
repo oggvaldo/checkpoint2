@@ -1,3 +1,5 @@
+Wireframe: [Figma](https://www.figma.com/file/6KpMTzHjjDb6AFtMrvGRVs/Checkpoint-2----Notes-aulas---Intro-%C3%A0-Info-V.2?node-id=0%3A1 "Figma")
+
 # Checkpoint: BlogII DH
 
 Atividade referente ao segundo checkpoint da disciplina de Introdução a Informática.
@@ -27,5 +29,4 @@ grupo.
 -   Este checkpoint é uma avaliação diagnóstica das aulas anteriores.
 -   A apresentação ocorrerá durante a aula ao vivo (síncrona).
 -   É importante ter em mente que esta atividade é obrigatória.
--   Os alunos serão avaliados pela apresentação, por isso é importante que
-    todos tenham um tempo de fala durante o seminário.
+-   Os alunos serão avaliados pela apresentação, por isso é importante que todos tenham um tempo de fala durante o seminário.
