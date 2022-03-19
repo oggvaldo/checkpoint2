@@ -21,17 +21,19 @@ body {
     font: 500 1rem 'Roboto', sans-serif;
     color: var(--text-color);
 }
-header,
-footer {
+header {
     background: var(--base-color);
-    /*position: fixed;*/
+    position: fixed;
     width: 100%;
 }
-
 h1 {
     color: var(--title-color-light);
+    font: 700 1.75rem 'Montserrat', sans-serif;
+    font-size: 4rem;
 }
-
+svg {
+    fill: var(--title-color-second);
+}
 .container {
     margin: 0 7.68rem;
 }
@@ -46,8 +48,6 @@ h1 {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-.logo > a {
     font: 700 1.75rem 'Montserrat', sans-serif;
 }
 span {
@@ -60,20 +60,18 @@ span {
     gap: 3.1875rem;
 }
 .inicio {
-    background-color: rgb(11, 34, 58);
-    height: 400px;
+    background-color: #512f89;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .hero {
-    margin: 9.375rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 .inicio svg {
-}
-svg {
-    fill: var(--title-color-second);
     height: 1.875rem;
     width: 1.875rem;
 }
