@@ -1,77 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font: 500 1rem 'Montserrat', sans-serif;
 }
 a {
     text-decoration: none;
     color: var(--title-color-light);
+    font: 700 1rem 'Montserrat', sans-serif;
+}
+body {
+    background: var(--body-color);
 }
 
 :root {
-    --base-color: #1f2276;
-    --body-color: #f9f9f9;
-    --title-color-light: #fff;
-    --title-color-second: #876bdc;
+    --base-color: #222;
+    --decoration-color: rgb(20, 196, 208);
+    --body-color: #f3f3f3;
     --text-color: #000;
+    --title-color-light: #f3f3f3;
 }
 
-body {
-    background: var(--body-color);
-    font: 500 1rem 'Roboto', sans-serif;
-    color: var(--text-color);
+.flex {
+    display: flex;
+    align-items: center;
 }
 header {
-    background: var(--base-color);
-    position: fixed;
+    height: 5rem;
     width: 100%;
-}
-h1 {
-    color: var(--title-color-light);
-    font: 700 1.75rem 'Montserrat', sans-serif;
-    font-size: 4rem;
-}
-svg {
-    fill: var(--title-color-second);
-}
-.container {
-    margin: 0 7.68rem;
-}
-
-#header {
-    height: 6.25rem;
+    padding: 0 1.25rem;
+    z-index: 1;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font: 700 1.75rem 'Montserrat', sans-serif;
+.header-scrolled {
+    animation: glass__header 0.5s linear both;
 }
-span {
-    color: var(--title-color-second);
+.logo a {
+    font: 700 1.5625rem 'Montserrat', sans-serif;
 }
 .menu {
-    font: 400 1rem 'Montserrat', sans-serif;
     list-style-type: none;
-    display: flex;
-    gap: 3.1875rem;
+    gap: 12px;
 }
-.inicio {
-    background-color: #512f89;
-    height: 100vh;
-    display: flex;
+
+#hero {
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 100px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    background: linear-gradient(
+            to right,
+            rgba(20, 196, 208, 0.3),
+            rgba(255, 0, 204, 0.3)
+        ),
+        url(../imgs/guarulhos-hero.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: fade-out-in 0.7s linear both reverse;
+}
+
+.hero__text {
+    height: 100%;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    gap: 5px;
+    color: var(--title-color-light);
 }
-.hero {
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+.hero__text h2 {
+    font: 700 6rem 'Montserrat', sans-serif;
+    text-align: center;
+    animation: fade-out-in 1s linear both reverse;
+    animation-delay: 0.5s;
 }
-.inicio svg {
-    height: 1.875rem;
-    width: 1.875rem;
+.hero__text span {
+    font: 700 2rem 'Montserrat', sans-serif;
+    text-align: center;
+    animation: fade-out-in 1s linear both reverse;
+    animation-delay: 0.7s;
+}
+
+#curiosidades {
+    width: 100%;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    padding: 0 10px;
+}
+.cards {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.card {
+    position: relative;
+    width: 30%;
+    height: 700px;
+    max-width: 450px;
+    min-width: 300px;
+    flex-direction: column;
+    border-radius: 15px;
+    justify-content: flex-end;
+}
+.card1 {
+    background: url(../imgs/aeroporto.jpeg) no-repeat center;
+    background-size: cover;
+}
+.card2 {
+    background: url(../imgs/catedral.jpg) no-repeat center;
+    background-size: cover;
+}
+.card3 {
+    background: url(../imgs/mamonas.jpeg) no-repeat center;
+    background-size: cover;
+}
+.card__bg {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    border-radius: 0 0 15px 15px;
+    background: rgba(44, 44, 44, 0.712);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.card__conteudo {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    padding: 15px;
+    overflow: hidden;
+    color: var(--title-color-light);
+}
+.card__conteudo h3 {
+    font: 700 1.3rem 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+.card .card__conteudo p {
+    opacity: 0;
+}
+.card:hover {
+    scale: 1.1;
+}
+.card:hover .card__bg {
+    height: 100%;
+    border-radius: 15px;
+}
+.card:hover .card__conteudo {
+    color: var(--title-color-light);
+    animation: coteudo-in 0.2s linear both;
+}
+.card:hover .card__conteudo p {
+    animation: fade-out-in 0.2s linear both reverse;
+    animation-delay: 0.2s;
+}
+
+#video {
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+}
+#video iframe {
+    height: 70vh;
+    width: 80%;
+}
+
+footer .social {
+    background: var(--base-color);
+    height: 100px;
+    justify-content: center;
+    gap: 50px;
+}
+svg {
+    height: 2rem;
+    fill: var(--decoration-color);
+}
+
+@keyframes glass__header {
+    0% {
+    }
+    100% {
+        background: rgba(44, 44, 44, 0.712);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        height: 2rem;
+    }
+}
+@keyframes fade-out-in {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes coteudo-in {
+    0% {
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    /* Mobile */
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+    .hero__text h2 {
+        font-size: 4rem;
+    }
+    .hero__text span {
+        font-size: 1rem;
+    }
+    .cards {
+        gap: 60px;
+    }
+    .card {
+        width: 30%;
+        height: 500px;
+    }
+    .mobile__card {
+        scale: 1.1;
+        animation-delay: 0.3s;
+    }
+    .mobile__card__bg {
+        height: 100%;
+        border-radius: 15px;
+    }
+    .mobile__card .card__conteudo {
+        color: var(--title-color-light);
+        animation: coteudo-in 0.2s linear both;
+    }
+    .mobile__card .card__conteudo p {
+        animation: fade-out-in 0.2s linear both reverse;
+        animation-delay: 0.2s;
+    }
+    #video iframe {
+        height: 40vh;
+        width: 80%;
+    }
+    @keyframes glass__header {
+        0% {
+        }
+        100% {
+            background: rgba(44, 44, 44, 0.712);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            height: auto;
+        }
+    }
 }
