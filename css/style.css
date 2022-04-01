@@ -23,6 +23,7 @@ body {
   font: 500 1rem "Roboto", sans-serif;
   color: var(--text-color);
 }
+
 header {
   background: var(--base-color);
   position: fixed;
@@ -34,9 +35,11 @@ h1 {
   font: 700 1.75rem "Montserrat", sans-serif;
   font-size: 4rem;
 }
+
 svg {
   fill: var(--title-color-second);
 }
+
 .container {
   margin: 0 7.68rem;
 }
@@ -47,27 +50,33 @@ svg {
   align-items: center;
   justify-content: space-between;
 }
+
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
   font: 700 1.75rem "Montserrat", sans-serif;
 }
+
 span {
   color: var(--title-color-second);
 }
+
 .menu {
   font: 400 1rem "Montserrat", sans-serif;
   list-style-type: none;
   display: flex;
   gap: 3.1875rem;
 }
+
 .menu a:nth-child() {
   color: var(--title-color-second);
 }
+
 .menu a:active {
   opacity: 0;
 }
+
 #inicio {
   background-color: #512f89;
   height: 100vh;
@@ -76,10 +85,12 @@ span {
   justify-content: center;
   align-items: center;
 }
+
 .hero {
   margin-top: 10rem;
   margin-bottom: 10rem;
 }
+
 #inicio svg {
   height: 1.875rem;
   width: 1.875rem;
@@ -102,7 +113,7 @@ section {
   height: 100%;
 }
 
-.paradigmas__programacao > h2 {
+.paradigmas__programacao>h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,7 +127,7 @@ section {
   margin-bottom: 1%;
 }
 
-.bloco__um > h3 {
+.bloco__um>h3 {
   padding: 0.5%;
 }
 
@@ -128,7 +139,7 @@ section {
   flex-direction: column;
 }
 
-.bloco > h3 {
+.bloco>h3 {
   padding: 0.5%;
 }
 
@@ -137,7 +148,7 @@ section {
   overflow: auto;
 }
 
-.button__LerMais > a {
+.button__LerMais>a {
   width: 122px;
   height: 51px;
   border-radius: 12px;
@@ -204,4 +215,29 @@ footer {
   display: flex;
   gap: 3%;
   justify-content: center;
+}
+
+.artigo__redes {
+  display: flex;
+  gap: 1%;
+  flex-direction: column;
+  background-image: url(https://inputec.com.br/wp-content/uploads/2019/12/Inputec-Tipos-De-Redes-Internet-Computadores-Tecnologia-Da-Informa%C3%A7%C3%A3o-960x675.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  padding: 2%;
+  height: 100%;
+ 
+}
+
+.artigo__redes h2 {
+  text-align: center;
+  margin: 3%;
+
+}
+
+.artigo__redes h3 {
+  margin: 2%;
+
 }
