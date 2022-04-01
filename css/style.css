@@ -103,10 +103,10 @@ section {
 }
 
 .paradigmas__programacao > h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
 }
 
 .bloco__um {
@@ -160,4 +160,48 @@ section {
 
 .button__LerMais :hover {
   transform: scale(1.1);
+}
+
+footer {
+  width: 100%;
+  height: 350px;
+  background-color: #171717;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 40%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.infos {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 1%;
+  text-align: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+.infoAluno {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 3%;
+}
+
+.infoDesenvolvimento {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.network {
+  display: flex;
+  gap: 3%;
+  justify-content: center;
 }
