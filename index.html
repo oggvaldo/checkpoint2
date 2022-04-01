@@ -1,90 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/x-icon" href="img/icons/VectorPizza.svg" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@500&display=swap"
-            rel="stylesheet"
-        />
-        <title>Checkpoint 02</title>
-    </head>
-    <body>
-        <header>
-            <div class="container" id="header">
-                <div class="logo">
-                    <a href="#">Grupo<span>01</span></a>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/icons/VectorPizza.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@500&display=swap"
+        rel="stylesheet" />
+    <title>Checkpoint 02</title>
+</head>
+
+<body>
+    <header>
+        <div class="container" id="header">
+            <div class="logo">
+                <a href="#">Grupo<span>01</span></a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#artigos">Artigos</a></li>
+                    <li><a href="#grupo">Sobre o grupo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="inicio">
+            <div class="hero">
+                <h1>Checkpoint<span>02</span></h1>
+            </div>
+
+            <a href="#artigos">
+                <svg viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000">
+                    <g>
+                        <path d="M501.9,731l0.4,0.3L990,294l-25.6-25.3L499.9,682.4l-465-411.5L10,297L501.9,731z" />
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+        <div id="artigos" class="container">
+            <section class="paradigmas__programacao">
+                <h2>Paradigmas de Programação</h2>
+                <div class="bloco__um">
+                    <h3>Já ouviu falar em Paradigma de Programação Funcional?</h3>
+                    <p>O paradigma de programação funcional é baseado em um conceito muito simples: o de funções
+                        matemáticas.
+                        A força desse paradigma é que sempre que a função X recebe o valor A, ela sempre retorna o valor
+                        B.
+                        Essa propriedade de retornar o mesmo valor é conhecida como imutabilidade, sendo característica
+                        desse paradigma.
+                        Em casos como esses, pode-se fazer melhor uso das cores da CPU e escrever códigos mais curtos e
+                        explícitos
+                    </p>
                 </div>
-                <nav>
-                    <ul class="menu">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#artigos">Artigos</a></li>
-                        <li><a href="#grupo">Sobre o grupo</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+                <div class="bloco">
+                    <h3>Linguagem Elixir</h3>
+                    <div class="info__text">
+                        <p>A criação da linguagem veio por meio da tentativa de construir algo compatível com o sistema
+                            da
+                            VM Erlang (BEAM), mas que supera a capacidade de aprimorar o desempenho do Ruby.
+                        </p>
+                        <p>Apesar da imutabilidade estar aparecendo mais nas linguagens de programação convencionais, no
+                            caso da Elixir é nativa.
+                            As linguagens convencionais normalmente fornecem o mecanismo como uma alternativa ao tipo de
+                            dados como imutável ou um método para tornar um valor imutável.</p>
+                        <p>
+                            Agora, falando sobre as funções da linguagem Elixir. As funções são as principais
+                            ferramentas
+                            para construir programas. Diminuem a complexidade de criar aplicativos grandes quando as
+                            funções
+                            têm as seguintes propriedades:
 
-        <main>
-            <div id="inicio">
-                <div class="hero">
-                    <h1>Checkpoint<span>02</span></h1>
+                            Valores imutáveis;
+                            O resultado da função é afetado apenas pelos argumentos dela;
+                            A função não gera efeitos além dos valores retornados.
+                            Esses tipos de funções também são conhecidas como “puras”. As funções mais complexas e
+                            imprevisíveis, são chamadas de funções impuras.
+
+                            Os desempenhos da Elixir mostram resultados muito melhores durante os serviços de teste de
+                            software que a Ruby. Se usado com o Phoenix (framework), a resposta fica na casa dos micro
+                            segundos.
+
+                            A confiabilidade característica da Elixir é um dos pontos fortes absorvidos da Erlang, que é
+                            chamada de
+                            linguagem de programação comprovada em batalha. Não existe razão para duvidar da
+                            confiabilidade
+                            da programação Elixir.
+
+                            Ações simultâneas significa a capacidade de executar vários processos ao mesmo tempo, além
+                            de
+                            mantê-los independentes uns dos outros. A linguagem tem essa característica, absorvida da
+                            Erlang
+                            também.
+
+                            Elixir pode lidar facilmente com muito tráfego sem custos extras para servidores adicionais
+                            e a
+                            criação de soluções eficientes de DevOps.
+                        </p>
+                    </div>
+                    <div class="button__LerMais"><a
+                            href="https://tecnoblog.net/responde/linguagem-elixir-7-motivos-para-aprender/">Ler mais</a>
+                    </div>
                 </div>
+                <div class="bloco">
+                    <h3>Quem é o criador dessa linguagem?</h3>
+                    <div class="info__text">
+                        <p>José Valim, criador da linguagem de programação Elixir e co-fundador do Plataformatec. É um
+                            brasileiro que vive na Polônia e que passa os dias trabalhando no Open Source.
+                            José, é muito conhecido como um membro ativo da Comunidade Ruby. E também construiu uma
+                            linguagem de programação em cima de Erlang chamada Elixir.
+                        </p>
+                        <p>Ele não tem formação formal em Ciência da Computação. Portanto, quando decidiu criar o
+                            Elixir, sabia que tinha que colocar em dia o background necessário para lexers, parsers, e
+                            assim por diante.
+                            Leu alguns livros sobre o assunto, leu o código fonte de como diferentes idiomas são
+                            implementados, e também jogou com diferentes ferramentas para ter uma melhor compreensão do
+                            que
+                            é possível e do que não é.</p>
+                        <p> Em 2010, ele estava trabalhando para melhorar o desempenho do Rails ao trabalhar com
+                            sistemas
+                            multi-core, uma vez que as máquinas e sistemas de produção estão sendo enviados com cada vez
+                            mais núcleos. No entanto, toda a experiência foi bastante frustrante, pois a Ruby não
+                            fornece a
+                            ferramenta adequada para resolver os problemas de concorrência. Foi então que ele começou a
+                            olhar
+                            para outras tecnologias e acabou se me apaixonando pela Máquina Virtual Erlang.
+                            Começou a usar cada vez mais Erlang e, com a experiência, percebeu que lhe faltavam algumas
+                            construções disponíveis em muitas outras línguas, inclusive as funcionais. Foi quando
+                            decidiu
+                            criar a Elixir, como uma tentativa de trazer diferentes construções e excelentes ferramentas
+                            para cima da VM de Erlang.</p>
+                    </div>
+                    <div class="button__LerMais"><a
+                            href="https://www.sitepoint.com/an-interview-with-elixir-creator-jose-valim/">Ler mais</a>
+                    </div>
+                </div>
+            </section>
+            <section class="aula__14">
+                <img src="" alt="">
+                <h2>
+                    </ <p>
+                    </p>h2>
+            </section>
+            <section class="aula__15">
+                <img src="" alt="">
+                <h2></h2>
+                <p></p>
+            </section>
+            <section class="aula__16">
+                <img src="" alt="">
+                <h2></h2>
+                <p></p>
+            </section>
+            <section class="aula__17">
+                <img src="" alt="">
+                <h2></h2>
+                <p></p>
+            </section>
+            <section class="aula__18">
+                <img src="" alt="">
+                <h2></h2>
+                <p></p>
+            </section>
+        </div>
+        <div id="grupo" class="container"></div>
+    </main>
 
-                <a href="#artigos">
-                    <svg
-                        viewBox="0 0 1000 1000"
-                        enable-background="new 0 0 1000 1000"
-                    >
-                        <g>
-                            <path
-                                d="M501.9,731l0.4,0.3L990,294l-25.6-25.3L499.9,682.4l-465-411.5L10,297L501.9,731z"
-                            />
-                        </g>
-                    </svg>
-                </a>
-            </div>
+    <footer></footer>
+</body>
 
-            <div id="artigos" class="container">
-                <section class="aula__13">
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </section>
-                <section class="aula__14">
-                    <img src="" alt="">
-                        <h2></
-                            <p></p>h2>
-                </section>
-                <section class="aula__15">
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </section>
-                <section class="aula__16">
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </section>
-                <section class="aula__17">
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </section>
-                <section class="aula__18">
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </section>
-            </div>
-            <div id="grupo" class="container"></div>
-        </main>
-
-        <footer></footer>
-    </body>
 </html>

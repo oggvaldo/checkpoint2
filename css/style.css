@@ -87,3 +87,35 @@ span {
 section {
     height: 100vh;
 }
+
+.paradigmas__programacao {
+    background-image: url("../img/linguagem-elixir-capa-tb.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--title-color-light);
+    padding: 75px;
+}
+
+
+.bloco {
+    background-color: rgba(48, 42, 42, 0.589);
+    height:45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco > h3 {
+    padding: 0.5%;
+}
+
+.info__text {
+    padding: 1%;
+}
+
+.button__LerMais > a {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
