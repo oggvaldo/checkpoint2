@@ -1,121 +1,135 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 a {
-    text-decoration: none;
-    color: var(--title-color-light);
-    scroll-behavior: smooth;
+  text-decoration: none;
+  color: var(--title-color-light);
+  scroll-behavior: smooth;
 }
 
 :root {
-    --base-color: #1f2276;
-    --body-color: #f9f9f9;
-    --title-color-light: #fff;
-    --title-color-second: #876bdc;
-    --text-color: #000;
+  --base-color: #1f2276;
+  --body-color: #f9f9f9;
+  --title-color-light: #fff;
+  --title-color-second: #876bdc;
+  --text-color: #000;
 }
 
 body {
-    background: var(--body-color);
-    font: 500 1rem 'Roboto', sans-serif;
-    color: var(--text-color);
+  background: var(--body-color);
+  font: 500 1rem "Roboto", sans-serif;
+  color: var(--text-color);
 }
 header {
-    background: var(--base-color);
-    position: fixed;
-    width: 100%;
+  background: var(--base-color);
+  position: fixed;
+  width: 100%;
 }
 
 h1 {
-    color: var(--title-color-light);
-    font: 700 1.75rem 'Montserrat', sans-serif;
-    font-size: 4rem;
+  color: var(--title-color-light);
+  font: 700 1.75rem "Montserrat", sans-serif;
+  font-size: 4rem;
 }
 svg {
-    fill: var(--title-color-second);
+  fill: var(--title-color-second);
 }
 .container {
-    margin: 0 7.68rem;
+  margin: 0 7.68rem;
 }
 
 #header {
-    height: 6.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  height: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font: 700 1.75rem 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 700 1.75rem "Montserrat", sans-serif;
 }
 span {
-    color: var(--title-color-second);
+  color: var(--title-color-second);
 }
 .menu {
-    font: 400 1rem 'Montserrat', sans-serif;
-    list-style-type: none;
-    display: flex;
-    gap: 3.1875rem;
+  font: 400 1rem "Montserrat", sans-serif;
+  list-style-type: none;
+  display: flex;
+  gap: 3.1875rem;
 }
 .menu a:nth-child() {
-    color: var(--title-color-second);
+  color: var(--title-color-second);
 }
 .menu a:active {
-    opacity: 0;
+  opacity: 0;
 }
 #inicio {
-    background-color: #512f89;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: #512f89;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .hero {
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 #inicio svg {
-    height: 1.875rem;
-    width: 1.875rem;
+  height: 1.875rem;
+  width: 1.875rem;
 }
 
 section {
-    height: 100vh;
+  height: 100vh;
 }
 
 .paradigmas__programacao {
-    background-image: url("../img/linguagem-elixir-capa-tb.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: var(--title-color-light);
-    padding: 75px;
+  background-image: url("../img/linguagem-elixir-capa-tb.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--title-color-light);
+  padding: 75px;
 }
 
-
 .bloco {
-    background-color: rgba(48, 42, 42, 0.589);
-    height:45%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  background-color: rgba(48, 42, 42, 0.589);
+  height: 45%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .bloco > h3 {
-    padding: 0.5%;
+  padding: 0.5%;
 }
 
 .info__text {
-    padding: 1%;
+  padding: 1%;
 }
 
 .button__LerMais > a {
+  padding: 1%;
+  width: 122px;
+  height: 51px;
+  border-radius: 12px;
+  background-color: rgba(51, 187, 105, 0.05);
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  border: 1px solid #33bb69;
+}
+
+.button__LerMais {
     display: flex;
     justify-content: center;
-    padding: 1%;
+    margin-top: 20px;
 }
