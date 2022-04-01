@@ -90,6 +90,7 @@ section {
 
 .paradigmas__programacao {
   background-image: url("../img/linguagem-elixir-capa-tb.png");
+  resize: both;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -132,4 +133,8 @@ section {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+.button__LerMais :hover {
+    transform: scale(1.1);
 }
