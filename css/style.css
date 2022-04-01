@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   color: var(--title-color-light);
@@ -90,7 +91,6 @@ section {
 
 .paradigmas__programacao {
   background-image: url("../img/linguagem-elixir-capa-tb.png");
-  resize: both;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -99,6 +99,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
 }
 
 .paradigmas__programacao > h2 {
@@ -110,18 +111,13 @@ section {
 
 .bloco__um {
   background-color: rgba(48, 42, 42, 0.589);
-  height: 15%;
+  height: 100%;
   width: 100%;
   margin-bottom: 1%;
 }
 
 .bloco__um > h3 {
   padding: 0.5%;
-}
-
-.bloco__um > p {
-  padding: 1%;
-  
 }
 
 .bloco {
@@ -138,6 +134,7 @@ section {
 
 .info__text {
   padding: 1%;
+  overflow: auto;
 }
 
 .button__LerMais > a {
