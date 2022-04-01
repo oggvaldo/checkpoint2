@@ -96,11 +96,37 @@ section {
   background-size: cover;
   color: var(--title-color-light);
   padding: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.paradigmas__programacao > h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.bloco__um {
+  background-color: rgba(48, 42, 42, 0.589);
+  height: 15%;
+  width: 100%;
+  margin-bottom: 1%;
+}
+
+.bloco__um > h3 {
+  padding: 0.5%;
+}
+
+.bloco__um > p {
+  padding: 1%;
+  
 }
 
 .bloco {
   background-color: rgba(48, 42, 42, 0.589);
-  height: 45%;
+  height: 50%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -130,11 +156,10 @@ section {
 }
 
 .button__LerMais {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .button__LerMais :hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
