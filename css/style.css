@@ -32,9 +32,12 @@ body {
 
 /* Header e Hero(banner) */
 header {
-    background: var(--base-color);
+    height: 6.25rem;
     position: fixed;
     width: 100%;
+}
+.header-scrolled {
+    animation: header_backgroud 0.5s linear both;
 }
 h1 {
     color: var(--title-color-light);
@@ -45,7 +48,7 @@ svg {
     fill: var(--title-color-second);
 }
 #header {
-    height: 6.25rem;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,6 +94,9 @@ section {
     height: 100vh;
     justify-content: space-between;
     align-items: center;
+}
+.inverted {
+    flex-flow: row-reverse;
 }
 .info__text,
 section .img {
@@ -220,4 +226,13 @@ footer {
 .infoDesenvolvimento {
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.75);
+}
+
+@keyframes header_backgroud {
+    0% {
+    }
+    100% {
+        background: var(--base-color);
+        height: 2rem;
+    }
 }
