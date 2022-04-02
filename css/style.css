@@ -1,0 +1,238 @@
+/*  Reset e padrões */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: var(--title-color-light);
+}
+:root {
+    --base-color: #1f2276;
+    --second-color: #512f89;
+    --body-color: #f9f9f9;
+    --title-color-light: #fff;
+    --title-color-second: #876bdc;
+    --text-color: #000;
+}
+.container {
+    margin: 0 7.68rem;
+}
+.flex {
+    display: flex;
+}
+body {
+    background: var(--body-color);
+    font: 500 1rem 'Roboto', sans-serif;
+    color: var(--text-color);
+}
+
+/* Header e Hero(banner) */
+header {
+    height: 6.25rem;
+    position: fixed;
+    width: 100%;
+}
+.header-scrolled {
+    animation: header_backgroud 0.5s linear both;
+}
+h1 {
+    color: var(--title-color-light);
+    font: 700 1.75rem 'Montserrat', sans-serif;
+    font-size: 4rem;
+}
+svg {
+    fill: var(--title-color-second);
+}
+#header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font: 700 1.75rem 'Montserrat', sans-serif;
+}
+header span,
+.hero span {
+    color: var(--title-color-second);
+}
+.menu {
+    font: 400 1rem 'Montserrat', sans-serif;
+    list-style-type: none;
+    display: flex;
+    gap: 3.1875rem;
+}
+.menu a:hover {
+    color: var(--title-color-second);
+}
+#inicio {
+    background-color: #512f89;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+#inicio svg {
+    height: 1.875rem;
+    width: 1.875rem;
+}
+
+/* Artigos */
+section {
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.inverted {
+    flex-flow: row-reverse;
+}
+.info__text,
+section .img {
+    border-width: 0px;
+    border-color: #cccccc;
+    background-color: #ffffff;
+    color: #000000;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.5);
+}
+section .img {
+    width: 30%;
+    height: 50%;
+}
+.info__text {
+    padding: 30px;
+    width: 68%;
+    height: 50%;
+    overflow: auto;
+}
+.info__text h2 {
+    margin-bottom: 15px;
+}
+.info__text h3,
+.info__text p,
+.Button_lerMais {
+    margin-bottom: 10px;
+}
+.info__text span {
+    color: var(--second-color);
+}
+.Button_lerMais {
+    box-shadow: 0px 10px 14px -7px #276873;
+    background-color: var(--base-color);
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #3d768a;
+}
+.Button_lerMais:hover {
+    background-color: var(--second-color);
+}
+.Button_lerMais:active {
+    position: relative;
+    top: 1px;
+}
+
+/* Imagens dos artigos */
+
+.artigo__paradigmas .img {
+    background: url(../img/linguagem-elixir-capa-tb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.artigo__virtualizacao .img {
+    background: url(#);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.artigo__redes .img {
+    background: url(https://inputec.com.br/wp-content/uploads/2019/12/Inputec-Tipos-De-Redes-Internet-Computadores-Tecnologia-Da-Informa%C3%A7%C3%A3o-960x675.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.artigo__internet .img {
+    background: url(#);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.artigo__seguranca .img {
+    background: url(../img/pexels-pixabay-60504.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.artigo__etica .img {
+    background: url(#);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Footer (sobre o grupo) */
+footer {
+    width: 100%;
+    height: 350px;
+    background-color: #171717;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 40%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.infos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.infoAluno {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 3%;
+}
+
+.infoDesenvolvimento {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+@keyframes header_backgroud {
+    0% {
+    }
+    100% {
+        background: var(--base-color);
+        height: 2rem;
+    }
+}
