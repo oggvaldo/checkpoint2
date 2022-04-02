@@ -1,243 +1,223 @@
+/*  Reset e padrões */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-
 a {
-  text-decoration: none;
-  color: var(--title-color-light);
-  scroll-behavior: smooth;
+    text-decoration: none;
+    color: var(--title-color-light);
 }
-
 :root {
-  --base-color: #1f2276;
-  --body-color: #f9f9f9;
-  --title-color-light: #fff;
-  --title-color-second: #876bdc;
-  --text-color: #000;
+    --base-color: #1f2276;
+    --second-color: #512f89;
+    --body-color: #f9f9f9;
+    --title-color-light: #fff;
+    --title-color-second: #876bdc;
+    --text-color: #000;
 }
-
-body {
-  background: var(--body-color);
-  font: 500 1rem "Roboto", sans-serif;
-  color: var(--text-color);
-}
-
-header {
-  background: var(--base-color);
-  position: fixed;
-  width: 100%;
-}
-
-h1 {
-  color: var(--title-color-light);
-  font: 700 1.75rem "Montserrat", sans-serif;
-  font-size: 4rem;
-}
-
-svg {
-  fill: var(--title-color-second);
-}
-
 .container {
-  margin: 0 7.68rem;
+    margin: 0 7.68rem;
+}
+.flex {
+    display: flex;
+}
+body {
+    background: var(--body-color);
+    font: 500 1rem 'Roboto', sans-serif;
+    color: var(--text-color);
 }
 
+/* Header e Hero(banner) */
+header {
+    background: var(--base-color);
+    position: fixed;
+    width: 100%;
+}
+h1 {
+    color: var(--title-color-light);
+    font: 700 1.75rem 'Montserrat', sans-serif;
+    font-size: 4rem;
+}
+svg {
+    fill: var(--title-color-second);
+}
 #header {
-  height: 6.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font: 700 1.75rem "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font: 700 1.75rem 'Montserrat', sans-serif;
 }
-
-span {
-  color: var(--title-color-second);
+header span,
+.hero span {
+    color: var(--title-color-second);
 }
-
 .menu {
-  font: 400 1rem "Montserrat", sans-serif;
-  list-style-type: none;
-  display: flex;
-  gap: 3.1875rem;
+    font: 400 1rem 'Montserrat', sans-serif;
+    list-style-type: none;
+    display: flex;
+    gap: 3.1875rem;
 }
-
-.menu a:nth-child() {
-  color: var(--title-color-second);
+.menu a:hover {
+    color: var(--title-color-second);
 }
-
-.menu a:active {
-  opacity: 0;
-}
-
 #inicio {
-  background-color: #512f89;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    background-color: #512f89;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
 .hero {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
-
 #inicio svg {
-  height: 1.875rem;
-  width: 1.875rem;
+    height: 1.875rem;
+    width: 1.875rem;
 }
 
+/* Artigos */
 section {
-  height: 100vh;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.paradigmas__programacao {
-  background-image: url("../img/linguagem-elixir-capa-tb.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: var(--title-color-light);
-  padding: 75px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
+.info__text,
+section .img {
+    border-width: 0px;
+    border-color: #cccccc;
+    background-color: #ffffff;
+    color: #000000;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(66, 66, 66, 0.5);
 }
-
-.paradigmas__programacao>h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5%;
+section .img {
+    width: 30%;
+    height: 50%;
 }
-
-.bloco__um {
-  background-color: rgba(48, 42, 42, 0.589);
-  height: 100%;
-  width: 100%;
-  margin-bottom: 1%;
-}
-
-.bloco__um>h3 {
-  padding: 0.5%;
-}
-
-.bloco {
-  background-color: rgba(48, 42, 42, 0.589);
-  height: 50%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.bloco>h3 {
-  padding: 0.5%;
-}
-
 .info__text {
-  padding: 1%;
-  overflow: auto;
+    padding: 30px;
+    width: 68%;
+    height: 50%;
+    overflow: auto;
+}
+.info__text h2 {
+    margin-bottom: 15px;
+}
+.info__text h3,
+.info__text p,
+.Button_lerMais {
+    margin-bottom: 10px;
+}
+.info__text span {
+    color: var(--second-color);
+}
+.Button_lerMais {
+    box-shadow: 0px 10px 14px -7px #276873;
+    background-color: var(--base-color);
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #3d768a;
+}
+.Button_lerMais:hover {
+    background-color: var(--second-color);
+}
+.Button_lerMais:active {
+    position: relative;
+    top: 1px;
 }
 
-.button__LerMais>a {
-  width: 122px;
-  height: 51px;
-  border-radius: 12px;
-  background-color: rgba(51, 187, 105, 0.05);
-  font-weight: 400;
-  font-style: normal;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  border: 1px solid #33bb69;
+/* Imagens dos artigos */
+
+.artigo__paradigmas .img {
+    background: url(../img/linguagem-elixir-capa-tb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.artigo__virtualizacao .img {
+    background: url(#);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.artigo__redes .img {
+    background: url(https://inputec.com.br/wp-content/uploads/2019/12/Inputec-Tipos-De-Redes-Internet-Computadores-Tecnologia-Da-Informa%C3%A7%C3%A3o-960x675.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.artigo__internet .img {
+    background: url(#);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.artigo__seguranca .img {
+    background: url(../img/pexels-pixabay-60504.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.artigo__etica .img {
+    background: url(#);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.button__LerMais {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1%;
-}
-
-.button__LerMais :hover {
-  transform: scale(1.1);
-}
-
+/* Footer (sobre o grupo) */
 footer {
-  width: 100%;
-  height: 350px;
-  background-color: #171717;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  gap: 40%;
-  position: relative;
-  bottom: 0;
-  left: 0;
+    width: 100%;
+    height: 350px;
+    background-color: #171717;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 40%;
+    position: relative;
+    bottom: 0;
+    left: 0;
 }
 
 .infos {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding: 1%;
-  text-align: center;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  justify-self: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
 }
 
 .infoAluno {
-  width: 33.33%;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 3%;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 3%;
 }
 
 .infoDesenvolvimento {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.network {
-  display: flex;
-  gap: 3%;
-  justify-content: center;
-}
-
-.artigo__redes {
-  display: flex;
-  gap: 1%;
-  flex-direction: column;
-  background-image: url(https://inputec.com.br/wp-content/uploads/2019/12/Inputec-Tipos-De-Redes-Internet-Computadores-Tecnologia-Da-Informa%C3%A7%C3%A3o-960x675.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  text-shadow: black 0.1em 0.1em 0.2em;
-  padding: 2%;
-  height: 100%;
- 
-}
-
-.artigo__redes h2 {
-  text-align: center;
-  margin: 3%;
-
-}
-
-.artigo__redes h3 {
-  margin: 2%;
-
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.75);
 }

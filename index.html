@@ -1,306 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Checkpoint 02</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@500&display=swap"
-        rel="stylesheet" />
-    <title>Checkpoint 02</title>
-</head>
-
-<body>
-    <header>
-        <div class="container" id="header">
-            <div class="logo">
-                <a href="#">Grupo<span>01</span></a>
-            </div>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#artigos">Artigos</a></li>
-                    <li><a href="#grupo">Sobre o grupo</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <div id="inicio">
-            <div class="hero">
-                <h1>Checkpoint<span>02</span></h1>
-            </div>
-
-            <a href="#artigos">
-                <svg viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000">
-                    <g>
-                        <path d="M501.9,731l0.4,0.3L990,294l-25.6-25.3L499.9,682.4l-465-411.5L10,297L501.9,731z" />
-                    </g>
-                </svg>
-            </a>
-        </div>
-
-        <div id="artigos" class="container">
-            <section id="paradigmas" class="paradigmas__programacao">
-                <h2>Paradigmas de Programação</h2>
-                <div class="bloco__um">
-                    <h3>Já ouviu falar em Paradigma de Programação Funcional?</h3>
-                    <div class="info__text">
-                        <p>O paradigma de programação funcional é baseado em um conceito muito simples: o de funções
-                            matemáticas.
-                            A força desse paradigma é que sempre que a função X recebe o valor A, ela sempre retorna o
-                            valor
-                            B.
-                            Essa propriedade de retornar o mesmo valor é conhecida como imutabilidade, sendo
-                            característica
-                            desse paradigma.
-                            Em casos como esses, pode-se fazer melhor uso das cores da CPU e escrever códigos mais
-                            curtos e
-                            explícitos
-                        </p>
-                    </div>
+    <body>
+        <header>
+            <div class="container" id="header">
+                <div class="logo">
+                    <a href="#">Grupo<span>01</span></a>
                 </div>
-                <div class="bloco">
-                    <h3>Linguagem Elixir</h3>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#artigos">Artigos</a></li>
+                        <li><a href="#grupo">Sobre o grupo</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div id="inicio">
+                <div class="hero">
+                    <h1>Checkpoint<span>02</span></h1>
+                </div>
+
+                <a href="#artigos">
+                    <svg
+                        viewBox="0 0 1000 1000"
+                        enable-background="new 0 0 1000 1000"
+                    >
+                        <g>
+                            <path
+                                d="M501.9,731l0.4,0.3L990,294l-25.6-25.3L499.9,682.4l-465-411.5L10,297L501.9,731z"
+                            />
+                        </g>
+                    </svg>
+                </a>
+            </div>
+
+            <div id="artigos" class="container">
+                <section class="flex artigo__paradigmas">
+                    <div class="img"></div>
                     <div class="info__text">
-                        <p>A criação da linguagem veio por meio da tentativa de construir algo compatível com o sistema
-                            da
-                            VM Erlang (BEAM), mas que supera a capacidade de aprimorar o desempenho do Ruby.
-                        </p>
-                        <p>Apesar da imutabilidade estar aparecendo mais nas linguagens de programação convencionais, no
-                            caso da Elixir é nativa.
-                            As linguagens convencionais normalmente fornecem o mecanismo como uma alternativa ao tipo de
-                            dados como imutável ou um método para tornar um valor imutável.</p>
+                        <h2>Paradigmas de Programação</h2>
+
+                        <h3>
+                            Já ouviu falar em Paradigma de Programação
+                            Funcional?
+                        </h3>
                         <p>
-                            Agora, falando sobre as funções da linguagem Elixir. As funções são as principais
-                            ferramentas
-                            para construir programas. Diminuem a complexidade de criar aplicativos grandes quando as
-                            funções
-                            têm as seguintes propriedades:
-
-                            Valores imutáveis;
-                            O resultado da função é afetado apenas pelos argumentos dela;
-                            A função não gera efeitos além dos valores retornados.
-                            Esses tipos de funções também são conhecidas como “puras”. As funções mais complexas e
-                            imprevisíveis, são chamadas de funções impuras.
-
-                            Os desempenhos da Elixir mostram resultados muito melhores durante os serviços de teste de
-                            software que a Ruby. Se usado com o Phoenix (framework), a resposta fica na casa dos micro
-                            segundos.
-
-                            A confiabilidade característica da Elixir é um dos pontos fortes absorvidos da Erlang, que é
-                            chamada de
-                            linguagem de programação comprovada em batalha. Não existe razão para duvidar da
-                            confiabilidade
-                            da programação Elixir.
-
-                            Ações simultâneas significa a capacidade de executar vários processos ao mesmo tempo, além
-                            de
-                            mantê-los independentes uns dos outros. A linguagem tem essa característica, absorvida da
-                            Erlang
-                            também.
-
-                            Elixir pode lidar facilmente com muito tráfego sem custos extras para servidores adicionais
-                            e a
-                            criação de soluções eficientes de DevOps.
+                            O paradigma de programação funcional é baseado em um
+                            conceito muito simples: o de funções matemáticas. A
+                            força desse paradigma é que sempre que a função X
+                            recebe o valor A, ela sempre retorna o valor B. Essa
+                            propriedade de retornar o mesmo valor é conhecida
+                            como imutabilidade, sendo característica desse
+                            paradigma. Em casos como esses, pode-se fazer melhor
+                            uso das cores da CPU e escrever códigos mais curtos
+                            e explícitos
                         </p>
+
+                        <h3>Linguagem Elixir</h3>
+                        <p>
+                            A criação da linguagem veio por meio da tentativa de
+                            construir algo compatível com o sistema da VM Erlang
+                            (BEAM), mas que supera a capacidade de aprimorar o
+                            desempenho do Ruby.
+                        </p>
+                        <p>
+                            Apesar da imutabilidade estar aparecendo mais nas
+                            linguagens de programação convencionais, no caso da
+                            Elixir é nativa. As linguagens convencionais
+                            normalmente fornecem o mecanismo como uma
+                            alternativa ao tipo de dados como imutável ou um
+                            método para tornar um valor imutável.
+                        </p>
+                        <p>
+                            Agora, falando sobre as funções da linguagem Elixir.
+                            As funções são as principais ferramentas para
+                            construir programas. Diminuem a complexidade de
+                            criar aplicativos grandes quando as funções têm as
+                            seguintes propriedades: Valores imutáveis; O
+                            resultado da função é afetado apenas pelos
+                            argumentos dela; A função não gera efeitos além dos
+                            valores retornados. Esses tipos de funções também
+                            são conhecidas como “puras”. As funções mais
+                            complexas e imprevisíveis, são chamadas de funções
+                            impuras. Os desempenhos da Elixir mostram resultados
+                            muito melhores durante os serviços de teste de
+                            software que a Ruby. Se usado com o Phoenix
+                            (framework), a resposta fica na casa dos micro
+                            segundos. A confiabilidade característica da Elixir
+                            é um dos pontos fortes absorvidos da Erlang, que é
+                            chamada de linguagem de programação comprovada em
+                            batalha. Não existe razão para duvidar da
+                            confiabilidade da programação Elixir. Ações
+                            simultâneas significa a capacidade de executar
+                            vários processos ao mesmo tempo, além de mantê-los
+                            independentes uns dos outros. A linguagem tem essa
+                            característica, absorvida da Erlang também. Elixir
+                            pode lidar facilmente com muito tráfego sem custos
+                            extras para servidores adicionais e a criação de
+                            soluções eficientes de DevOps.
+                        </p>
+
+                        <a
+                            href="https://tecnoblog.net/responde/linguagem-elixir-7-motivos-para-aprender/"
+                            class="Button_lerMais"
+                            target="_blank"
+                            >Ler mais</a
+                        >
+
+                        <h3>Quem é o criador dessa linguagem?</h3>
+                        <p>
+                            José Valim, criador da linguagem de programação
+                            Elixir e co-fundador do Plataformatec. É um
+                            brasileiro que vive na Polônia e que passa os dias
+                            trabalhando no Open Source. José, é muito conhecido
+                            como um membro ativo da Comunidade Ruby. E também
+                            construiu uma linguagem de programação em cima de
+                            Erlang chamada Elixir.
+                        </p>
+                        <p>
+                            Ele não tem formação formal em Ciência da
+                            Computação. Portanto, quando decidiu criar o Elixir,
+                            sabia que tinha que colocar em dia o background
+                            necessário para lexers, parsers, e assim por diante.
+                            Leu alguns livros sobre o assunto, leu o código
+                            fonte de como diferentes idiomas são implementados,
+                            e também jogou com diferentes ferramentas para ter
+                            uma melhor compreensão do que é possível e do que
+                            não é.
+                        </p>
+                        <p>
+                            Em 2010, ele estava trabalhando para melhorar o
+                            desempenho do Rails ao trabalhar com sistemas
+                            multi-core, uma vez que as máquinas e sistemas de
+                            produção estão sendo enviados com cada vez mais
+                            núcleos. No entanto, toda a experiência foi bastante
+                            frustrante, pois a Ruby não fornece a ferramenta
+                            adequada para resolver os problemas de concorrência.
+                            Foi então que ele começou a olhar para outras
+                            tecnologias e acabou se me apaixonando pela Máquina
+                            Virtual Erlang. Começou a usar cada vez mais Erlang
+                            e, com a experiência, percebeu que lhe faltavam
+                            algumas construções disponíveis em muitas outras
+                            línguas, inclusive as funcionais. Foi quando decidiu
+                            criar a Elixir, como uma tentativa de trazer
+                            diferentes construções e excelentes ferramentas para
+                            cima da VM de Erlang.
+                        </p>
+
+                        <a
+                            href="https://www.sitepoint.com/an-interview-with-elixir-creator-jose-valim/"
+                            class="Button_lerMais"
+                            target="_blank"
+                            >Ler mais</a
+                        >
                     </div>
-                    <div class="button__LerMais"><a
-                            href="https://tecnoblog.net/responde/linguagem-elixir-7-motivos-para-aprender/">Ler mais</a>
-                    </div>
-                </div>
-                <div class="bloco">
-                    <h3>Quem é o criador dessa linguagem?</h3>
+                </section>
+                <section class="flex artigo__virtualizacao">
+                    <div class="img"></div>
                     <div class="info__text">
-                        <p>José Valim, criador da linguagem de programação Elixir e co-fundador do Plataformatec. É um
-                            brasileiro que vive na Polônia e que passa os dias trabalhando no Open Source.
-                            José, é muito conhecido como um membro ativo da Comunidade Ruby. E também construiu uma
-                            linguagem de programação em cima de Erlang chamada Elixir.
+                        <h2>Virtualização</h2>
+                        <h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eaque a perferendis, ex impedit deserunt
+                            numquam alias veritatis nihil et doloribus
+                            consequatur sit, repellat nisi vero, libero quos
+                            autem rem ullam.
                         </p>
-                        <p>Ele não tem formação formal em Ciência da Computação. Portanto, quando decidiu criar o
-                            Elixir, sabia que tinha que colocar em dia o background necessário para lexers, parsers, e
-                            assim por diante.
-                            Leu alguns livros sobre o assunto, leu o código fonte de como diferentes idiomas são
-                            implementados, e também jogou com diferentes ferramentas para ter uma melhor compreensão do
-                            que
-                            é possível e do que não é.</p>
-                        <p> Em 2010, ele estava trabalhando para melhorar o desempenho do Rails ao trabalhar com
-                            sistemas
-                            multi-core, uma vez que as máquinas e sistemas de produção estão sendo enviados com cada vez
-                            mais núcleos. No entanto, toda a experiência foi bastante frustrante, pois a Ruby não
-                            fornece a
-                            ferramenta adequada para resolver os problemas de concorrência. Foi então que ele começou a
-                            olhar
-                            para outras tecnologias e acabou se me apaixonando pela Máquina Virtual Erlang.
-                            Começou a usar cada vez mais Erlang e, com a experiência, percebeu que lhe faltavam algumas
-                            construções disponíveis em muitas outras línguas, inclusive as funcionais. Foi quando
-                            decidiu
-                            criar a Elixir, como uma tentativa de trazer diferentes construções e excelentes ferramentas
-                            para cima da VM de Erlang.</p>
+                        <a href="#" class="Button_lerMais" target="_blank"
+                            >Ler mais</a
+                        >
                     </div>
-                    <div class="button__LerMais"><a
-                            href="https://www.sitepoint.com/an-interview-with-elixir-creator-jose-valim/">Ler mais</a>
+                </section>
+                <section class="flex artigo__redes">
+                    <img src="" alt="" />
+                    <div class="img"></div>
+                    <div class="info__text">
+                        <h2>Redes de Computadores</h2>
+                        <p>
+                            Redes de dados, na informática e na telecomunicação
+                            é um conjunto de dois ou mais dispositivos
+                            eletrônicos de computação (ou módulos processadores
+                            ou nós da rede) interligados por um sistema de
+                            comunicação digital (ou link de dados), guiados por
+                            um conjunto de regras (protocolo de rede) para
+                            compartilhar entre si informação, serviços e,
+                            recursos físicos e lógicos. Estes podem ser do tipo:
+                            dados, impressoras, mensagens (e-mails), entre
+                            outros. As conexões podem ser estabelecidas usando
+                            mídia de cabo ou mídia sem fio.
+                        </p>
+
+                        <p>
+                            Os dispositivos integrantes de uma rede de
+                            computadores, que roteiam e terminam os dados, são
+                            denominados de “nós de rede" (ponto de conexão), que
+                            podem incluir hosts, como: computadores pessoais,
+                            telefones, servidores, e também hardware de rede.
+                            Dois desses dispositivos podem ser ditos em “rede”
+                            quando um dispositivo é capaz de trocar informações
+                            com o outro dispositivo, quer eles tenham ou não uma
+                            conexão direta entre si.
+                        </p>
+
+                        <p>
+                            Os exemplo mais comuns de redes de computadores,
+                            são: Internet; Intranet de uma empresa; rede local
+                            doméstica; entre outras.
+                        </p>
+
+                        <h3>Conexões</h3>
+                        <p>
+                            <span>Trançado</span>: facil instalação e barato,
+                            <span>Cabo coaxial</span>: usado em tv,
+                            <span>Fibra óptica</span>: melhor meio físico
+                            disponível graças à sua velocidade e largura de
+                            banda mas é custoso, <span>Wireless </span> : Seus
+                            dados se espalham livremente pelo ar. Os mais usados
+                            ​​são os infravermelhos, como o usado pelo controle
+                            remoto. Seu grande problema é a direcionalidade
+                            necessária para estabelecer a comunicação,
+                            <span>Bluetooth</span> : é a solução mais utilizada
+                            em redes PAN, pois seu alcance máximo é de 10
+                            metros, <span>Wi-fi </span> : É o mais utilizado em
+                            redes LAN, pois tem alcance de 100 metros em
+                            ambientes externos, Entretanto, seu alcance é
+                            reduzido em residências devido à presença das
+                            paredes,
+                        </p>
+                        <h3>Endereço IP</h3>
+                        <p>
+                            Cada dispositivo em uma rede possui um identificador
+                            único, que serve para indicar a origem ou o destino
+                            da transmissão: Esse identificador é chamado de
+                            endereço da rede (network address).
+                        </p>
+
+                        <p>
+                            O endereço IP é o identificador mais comum de um
+                            dispositivo de rede, mas existem também outros
+                            identificadores como o MAC address (Media Access
+                            Control Address), que são utilizados em
+                            configurações mais avançadas.
+                        </p>
+                        <p>
+                            <span>Dinâmica</span>: se permitirmos que o roteador
+                            designe automaticamente nosso IP.
+                        </p>
+                        <p>
+                            <span>Estática</span>: quando o definimos a partir
+                            do sistema operacional.
+                        </p>
+                        <p>
+                            <span>Gateway</span>: é usado por dispositivos de
+                            uma rede quando eles se comunicam com um dispositivo
+                            em uma rede diferente daquela em que estão.
+                        </p>
+                        <h3>Meios de transmissão de informações</h3>
+                        <p>
+                            <span>Mídia guiada</span>: Constitui-se por cabos
+                            que são responsáveis ​​por conduzir os sinais de uma
+                            ponta a outra. A velocidade de transmissão depende
+                            diretamente da distância entre os terminais
+                        </p>
+                        <p>
+                            <span>Mídia não guiada </span>: Constitui-se por
+                            cabos que são responsáveis ​​por conduzir os sinais
+                            de uma ponta a outra. A velocidade de transmissão
+                            depende diretamente da distância entre os terminais.
+                            A transmissão e recepção das informações é realizada
+                            por antenas. Ao transmitir, a antena irradia energia
+                            eletromagnética no meio e a antena a recebe ao
+                            capturar as ondas eletromagnéticas do meio que a
+                            rodeia.
+                        </p>
+                    </div>
+                </section>
+                <section class="flex artigo__internet">
+                    <div class="img"></div>
+                    <div class="info__text">
+                        <h2>Internet</h2>
+                        <h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eaque a perferendis, ex impedit deserunt
+                            numquam alias veritatis nihil et doloribus
+                            consequatur sit, repellat nisi vero, libero quos
+                            autem rem ullam.
+                        </p>
+                        <a href="#" class="Button_lerMais" target="_blank"
+                            >Ler mais</a
+                        >
+                    </div>
+                </section>
+                <section class="flex artigo__seguranca">
+                    <div class="img"></div>
+                    <div class="info__text">
+                        <h2>Segurança Informática</h2>
+                        <h3>
+                            Microsoft revela como grupo Lapsus$ invade empresas
+                        </h3>
+                        <p>
+                            Em um comunicado publicado em seu site de segurança,
+                            a Microsoft reconheceu ter sido vítima do Lapsus$
+                            Group. Após invadir um servidor Azure DevOps, os
+                            hackers do grupo extraíram e vazaram códigos-fontes
+                            de serviços como Bing e Cortana. A companhia afirma,
+                            porém, que a ação foi mitigada e que dados de
+                            clientes não foram comprometidos.
+                        </p>
+                        <p>
+                            A atividade foi atribuída a um grupo que a Microsoft
+                            rastreia como DEV-0537, também conhecido como
+                            LAPSUS$. O DEV-0537 é conhecido por usar um modelo
+                            de extorsão sem implantar ransomware. Entre seus
+                            primeiros alvos estão organizações no Reino Unido e
+                            na América do Sul, mas expandiu para alvos globais,
+                            incluindo organizações nos setores governamentais,
+                            de tecnologia, telecomunicações, mídia, varejo e
+                            saúde.
+                        </p>
+                        <p>
+                            Ao contrário da maioria dos grupos hackers que ficam
+                            sob o radar, o DEV-0537 não parece cobrir seus
+                            rastros. Eles chegam a anunciar seus ataques nas
+                            mídias sociais ou anunciar sua intenção de comprar
+                            credenciais de funcionários de organizações-alvo. O
+                            DEV-0537 também usa várias táticas que são usadas
+                            com menos frequência por outros grupos rastreados
+                            pela Microsoft. Suas táticas incluem engenharia
+                            social baseada em telefone; Troca de SIM para
+                            facilitar a aquisição de contas; acessar contas de
+                            e-mail pessoais de funcionários em
+                            organizações-alvo; pagar funcionários, fornecedores
+                            ou parceiros de negócios de organizações-alvo para
+                            acesso a credenciais e aprovação de autenticação
+                            multifator (MFA); e intrometendo-se nas chamadas de
+                            comunicação de crise em curso de seus alvos.
+                        </p>
+                        <a
+                            href="https://www.microsoft.com/security/blog/2022/03/22/dev-0537-criminal-actor-targeting-organizations-for-data-exfiltration-and-destruction/"
+                            class="Button_lerMais"
+                            target="_blank"
+                            >Ler mais</a
+                        >
+                    </div>
+                </section>
+                <section class="flex artigo__etica">
+                    <div class="img"></div>
+                    <div class="info__text">
+                        <h2>Ética na computação</h2>
+                        <h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Eaque a perferendis, ex impedit deserunt
+                            numquam alias veritatis nihil et doloribus
+                            consequatur sit, repellat nisi vero, libero quos
+                            autem rem ullam.
+                        </p>
+                        <a href="#" class="Button_lerMais" target="_blank"
+                            >Ler mais</a
+                        >
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div id="grupo" class="infos">
+                <div class="infoAluno">
+                    <div class="nome">Ariane França</div>
+                    <div class="infoDesenvolvimento">
+                        Responsável pelo desenvolvimento do Artigo de Paradigmas
+                        de Programação
+                    </div>
+                    <div class="network">
+                        <a
+                            href="https://www.linkedin.com/in/ariane-fran%C3%A7a-5377b7ba/"
+                            ><img
+                                src="img/linkedinLogo.png"
+                                alt="logo do linkedin"
+                        /></a>
+                        <a href="https://github.com/arianefrancaqa"
+                            ><img src="img/githubLogo.png" alt="logo do github"
+                        /></a>
                     </div>
                 </div>
-            </section>
-            <section class="artigo__virtualizacao">
-                <img src="" alt="" />
-                <h2>
-                    <!-- Chamada da noticia -->
-                </h2>
-                <h3>Virtualização</h3>
-                <p></p>
-            </section>
-            <section class="artigo__redes">
-                <img src="" alt="" />
-                <h2>Redes de Computadores</h2>
-                <p>Redes de dados, na informática e na telecomunicação é um conjunto de dois ou mais dispositivos
-                    eletrônicos de computação (ou módulos processadores ou nós da rede) interligados por um sistema de
-                    comunicação digital (ou link de dados), guiados por um conjunto de regras (protocolo de rede) para
-                    compartilhar entre si informação, serviços e, recursos físicos e lógicos. Estes podem ser do
-                    tipo: dados, impressoras, mensagens (e-mails), entre outros. As conexões podem ser estabelecidas
-                    usando mídia de cabo ou mídia sem fio.</p>
-
-                <p> Os dispositivos integrantes de uma rede de computadores, que roteiam e terminam os dados, são
-                    denominados de “nós de rede" (ponto de conexão), que podem incluir hosts, como: computadores
-                    pessoais, telefones, servidores, e também hardware de rede. Dois desses dispositivos podem ser ditos
-                    em “rede” quando um dispositivo é capaz de trocar informações com o outro dispositivo, quer eles
-                    tenham ou não uma conexão direta entre si.</p>
-
-                <p> Os exemplo mais comuns de redes de computadores, são: Internet; Intranet de uma empresa; rede local
-                    doméstica; entre outras.</p>
-
-                <h3>Conexões</h3>
-                <p><span>Trançado</span>: facil instalação e barato,
-                    <span>Cabo coaxial</span>: usado em tv,
-                    <span>Fibra óptica</span>: melhor meio físico disponível graças à sua velocidade e largura de banda
-                    mas é custoso,
-                    <span>Wireless </span> : Seus dados se espalham livremente pelo ar. Os mais usados ​​são os
-                    infravermelhos, como o
-                    usado pelo controle remoto. Seu grande problema é a direcionalidade necessária para estabelecer a
-                    comunicação,
-                    <span>Bluetooth</span> : é a solução mais utilizada em redes PAN, pois seu alcance
-                    máximo é de 10 metros,
-                    <span>Wi-fi </span> : É o mais utilizado em redes LAN, pois tem alcance de 100 metros em ambientes
-                    externos,
-                    Entretanto, seu alcance é reduzido em residências devido à presença das paredes,
-                </p>
-                <h3>Endereço IP</h3>
-                <p>Cada dispositivo em uma rede possui um identificador único, que serve para indicar a origem ou o
-                    destino da transmissão: Esse identificador é chamado de endereço da rede (network address).</p>
-
-                <p>O endereço IP é o identificador mais comum de um dispositivo de rede, mas existem também outros
-                    identificadores como o MAC address (Media Access Control Address), que são utilizados em
-                    configurações mais avançadas.
-                </p>
-                <p><span>Dinâmica</span>: se permitirmos que o roteador designe automaticamente nosso IP.
-                </p>
-                <p><span>Estática</span>: quando o definimos a partir do sistema operacional.
-                </p>
-                <p><span>Gateway</span>: é usado por dispositivos de uma rede quando eles se comunicam com um
-                    dispositivo em uma rede diferente daquela em que estão.
-                </p>
-                <h3>Meios de transmissão de informações</h3>
-                <p><span>Mídia guiada</span>: Constitui-se por cabos que são responsáveis ​​por conduzir os sinais de
-                    uma ponta a outra. A velocidade de transmissão depende diretamente da distância entre os terminais
-                </p>
-                <p><span>Mídia não guiada </span>: Constitui-se por cabos que são responsáveis ​​por conduzir os sinais
-                    de uma ponta a outra. A velocidade de transmissão depende diretamente da distância entre os
-                    terminais. A transmissão e recepção das informações é realizada por antenas. Ao transmitir, a antena
-                    irradia energia eletromagnética no meio e a antena a recebe ao capturar as ondas eletromagnéticas do
-                    meio que a rodeia.</p>
-            </section>
-            <section class="artigo__internet">
-                <img src="" alt="" />
-                <h2>
-                    <!-- Chamada da noticia -->
-                </h2>
-                <h3>Internet</h3>
-                <p></p>
-            </section>
-            <section class="artigo__seguranca">
-                <img src="" alt="" />
-                <h2>
-                    <!-- Chamada da noticia -->
-                </h2>
-                <h3>Segurança Informática</h3>
-                <p></p>
-            </section>
-            <section class="artigo__etica">
-                <img src="" alt="" />
-                <h2>
-                    <!-- Chamada da noticia -->
-                </h2>
-                <h3>Ética na computação</h3>
-                <p></p>
-            </section>
-        </div>
-
-        <div id="grupo" class="container"></div>
-    </main>
-
-    <footer>
-        <div class="infos">
-            <div class="infoAluno">
-                <div class="nome">Ariane França</div>
-                <div class="infoDesenvolvimento">Responsável pelo desenvolvimento do Artigo de Paradigmas de Programação
+                <div class="infoAluno">
+                    <div class="nome">Guilherme Moreira</div>
+                    <div class="infoDesenvolvimento">
+                        Responsável pelo desenvolvimento do
+                    </div>
+                    <div class="network">
+                        <a href=""
+                            ><img
+                                src="img/linkedinLogo.png"
+                                alt="logo do linkedin"
+                        /></a>
+                        <a href=""
+                            ><img src="img/githubLogo.png" alt="logo do github"
+                        /></a>
+                    </div>
                 </div>
-                <div class="network">
-                    <a href="https://www.linkedin.com/in/ariane-fran%C3%A7a-5377b7ba/"><img src="img/linkedinLogo.png"
-                            alt="logo do linkedin"></a>
-                    <a href="https://github.com/arianefrancaqa"><img src="img/githubLogo.png" alt="logo do github"></a>
+                <div class="infoAluno">
+                    <div class="nome">Gilmar Miranda</div>
+                    <div class="infoDesenvolvimento">
+                        Responsável pelo desenvolvimento do Artigo de Redes de
+                        Computadores
+                    </div>
+                    <div class="network">
+                        <a
+                            href="https://www.linkedin.com/in/gilmar-miranda-282788234/"
+                            ><img
+                                src="img/linkedinLogo.png"
+                                alt="logo do linkedin"
+                        /></a>
+                        <a href="https://github.com/zillly"
+                            ><img src="img/githubLogo.png" alt="logo do github"
+                        /></a>
+                    </div>
+                </div>
+                <div class="infoAluno">
+                    <div class="nome">Claudio Leite</div>
+                    <div class="infoDesenvolvimento">
+                        Responsável pelo desenvolvimento do
+                    </div>
+                    <div class="network">
+                        <a href=""
+                            ><img
+                                src="img/linkedinLogo.png"
+                                alt="logo do linkedin"
+                        /></a>
+                        <a href=""
+                            ><img src="img/githubLogo.png" alt="logo do github"
+                        /></a>
+                    </div>
+                </div>
+                <div class="infoAluno">
+                    <div class="nome">Andre Goldoni</div>
+                    <div class="infoDesenvolvimento">
+                        Responsável pelo desenvolvimento do
+                    </div>
+                    <div class="network">
+                        <a href=""
+                            ><img
+                                src="img/linkedinLogo.png"
+                                alt="logo do linkedin"
+                        /></a>
+                        <a href=""
+                            ><img src="img/githubLogo.png" alt="logo do github"
+                        /></a>
+                    </div>
+                </div>
+                <div class="infoAluno">
+                    <div class="nome">Dener Santos</div>
+                    <div class="infoDesenvolvimento">
+                        Responsável pelo desenvolvimento do
+                    </div>
+                    <div class="network">
+                        <a href=""
+                            ><img
+                                src="img/linkedinLogo.png"
+                                alt="logo do linkedin"
+                        /></a>
+                        <a href=""
+                            ><img src="img/githubLogo.png" alt="logo do github"
+                        /></a>
+                    </div>
                 </div>
             </div>
-            <div class="infoAluno">
-                <div class="nome">Guilherme Moreira</div>
-                <div class="infoDesenvolvimento">Responsável pelo desenvolvimento do
-                </div>
-                <div class="network">
-                    <a href=""><img src="img/linkedinLogo.png" alt="logo do linkedin"></a>
-                    <a href=""><img src="img/githubLogo.png" alt="logo do github"></a>
-                </div>
-            </div>
-            <div class="infoAluno">
-                <div class="nome">Gilmar Miranda</div>
-                <div class="infoDesenvolvimento">Responsável pelo desenvolvimento do Artigo de Redes de Computadores
-                </div>
-                <div class="network">
-                    <a href="https://www.linkedin.com/in/gilmar-miranda-282788234/"><img src="img/linkedinLogo.png"
-                            alt="logo do linkedin"></a>
-                    <a href="https://github.com/zillly"><img src="img/githubLogo.png" alt="logo do github"></a>
-                </div>
-            </div>
-            <div class="infoAluno">
-                <div class="nome">Claudio Leite</div>
-                <div class="infoDesenvolvimento">Responsável pelo desenvolvimento do</div>
-                <div class="network">
-                    <a href=""><img src="img/linkedinLogo.png" alt="logo do linkedin"></a>
-                    <a href=""><img src="img/githubLogo.png" alt="logo do github"></a>
-                </div>
-            </div>
-            <div class="infoAluno">
-                <div class="nome">Andre Goldoni</div>
-                <div class="infoDesenvolvimento">Responsável pelo desenvolvimento do</div>
-                <div class="network">
-                    <a href=""><img src="img/linkedinLogo.png" alt="logo do linkedin"></a>
-                    <a href=""><img src="img/githubLogo.png" alt="logo do github"></a>
-                </div>
-            </div>
-            <div class="infoAluno">
-                <div class="nome">Dener Santos</div>
-                <div class="infoDesenvolvimento">Responsável pelo desenvolvimento do</div>
-                <div class="network">
-                    <a href=""><img src="img/linkedinLogo.png" alt="logo do linkedin"></a>
-                    <a href=""><img src="img/githubLogo.png" alt="logo do github"></a>
-                </div>
-            </div>
-        </div>
-
-    </footer>
-</body>
-
+        </footer>
+    </body>
 </html>
