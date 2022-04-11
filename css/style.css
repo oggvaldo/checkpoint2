@@ -1,28 +1,199 @@
+/*Importando fonte do Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap");
+
+/* Utilizando variáveis nas cores */
+
+:root {
+  /* DarkMode */
+  --primary: #fbfcfc;
+  --primary-opacity: #fbfcfca6;
+  --secundary: #e6e8eb;
+
+  --color-text-primary: #0e0e0e;
+  --color-text-secundary: #223858;
+  --colorPink: #d24074;
+  --colorPurple: #223858;
+  --colorPurpleLight: #0f2f5e;
+  --gradiente-purple: linear-gradient(269.96deg, #10d7e2 0%, #9358f7 100%);
+  --gradient-pink: linear-gradient(270.06deg, #6518b4 0%, #d24074 101.62%);
+}
+
+.dark-mode:root {
+  --primary: #181818;
+  --primary-opacity: rgb(24, 24, 24, 0.65);
+  --secundary: #212121;
+
+  --color-text-primary: #c4c4c4;
+  --color-text-secundary: #00d2df;
+  --colorPink: #d24074;
+  --colorPurple: #6518b4;
+  --colorPurpleLight: #9358f7;
+  --gradiente-purple: linear-gradient(269.96deg, #10d7e2 0%, #9358f7 100%);
+  --gradient-pink: linear-gradient(270.06deg, #6518b4 0%, #d24074 101.62%);
+}
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
+html {
+  /* a cada 1rem será considera 10px */
+  font-size: 62.5%;
+}
 /* Add a gray background color with some padding */
 body {
-  font-family: Arial;
-  padding: 20px;
-  background: #f1f1f1;
+  font-family: "Inter", sans-serif;
+  background: var(--primary);
+  background-color: var(--secundary);
+}
+
+/* Barra de rolagem */
+
+*::-webkit-scrollbar {
+  width: 9px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--colorPurple);
+  border: 1px solid var(--colorPurpleLight);
 }
 
 /* Header/Blog Title */
 .header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: white;
+  height: 10vh;
+  width: 100%;
+  padding: 0 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  z-index: 999;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background: var(--primary-Opacity);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: var(--primary-Opacity);
+
+}
+
+.header h2 {
+  color: var(--color-text-secundary);
+}
+
+/* botão mode-light */
+
+.label {
+  background-color: var(--secundary);
+  width: 51px;
+  height: 26px;
+  padding: 6px;
+  border-radius: 50px;
+  border: 1px solid #181818;
+  position: relative;
+  display: flex;
+  transition: background 0.2s linear;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ball {
+  background-color: var(--primary);
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  transition: transform 0.2s linear;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-sun {
+  color: #ffc400;
+}
+.fa-moon {
+  color: #bdbdbd;
+}
+
+.banner {
+  display: flex;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  color: var(--primary);
+  font-weight: 700;
+  margin-top: 10vh;
+  align-items: center;
+
+  background-image: url(../assets/LooperBG.svg);
+  background-repeat: no-repeat;
+  background-position: 700px;
+
+  background-size: 75%;
+}
+
+.banner > span {
+  padding: 2% 5%;
+
+  max-height: 100%;
+  opacity: 0.5;
+  max-width: 100%;
+  line-height: 80%;
+  font-size: 30rem;
+  overflow-wrap: break-word;
+  position: absolute;
+  z-index: -1;
+}
+
+.apresentacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5%;
+  height: 80%;
+  width: 80%;
+}
+.apresentacao h1 {
+  font-size: 10rem;
+  color: var(--color-text-secundary);
+}
+
+.apresentacao h2 {
+  font-size: 5rem;
+  color: var(--color-text-primary);
+}
+
+.apresentacao h3 {
+  font-size: 3rem;
+  color: var(--color-text-primary);
+}
+
+main {
+  padding: 2% 5%;
 }
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {   
+.leftcolumn {
   float: left;
   width: 75%;
 }
@@ -36,16 +207,79 @@ body {
 
 /* Fake image */
 .fakeimg {
-  background-color: #aaa;
+  background-color: var(--secundary);
   width: 100%;
-  padding: 20px;
+  height: 15vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.fakeimg img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Add a card effect for articles */
 .card {
-   background-color: white;
-   padding: 20px;
-   margin-top: 20px;
+  background-color: var(--primary);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+}
+.card:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
+}
+
+.card h2 {
+  font-size: 2rem;
+  color: var(--color-text-primary);
+  padding: 1% 0;
+}
+
+.card h5 {
+  font-size: 1.2rem;
+  color: var(--color-text-primary);
+  padding-bottom: 2%;
+}
+
+.card p {
+  font-size: 1.2rem;
+  color: var(--color-text-primary);
+  padding: 2% 0;
+}
+
+.nomeAutor {
+  background: var(--colorPink);
+  padding: 1%;
+  border-radius: 50px;
+  display: flex;
+  align-self: flex-end;
+  justify-self: flex-end;
+  color: var(--color-text-primary);
+}
+
+.card .sobreGrupo {
+  padding-bottom: 3%;
+}
+
+.card ol {
+  padding: 5%;
+  color: var(--color-text-primary);
+  font-size: 1.1rem;
+}
+
+.card h3 {
+  font-size: 2rem;
+  color: var(--color-text-primary);
+  padding: 1% 0;
 }
 
 /* Clear floats after the columns */
@@ -59,14 +293,24 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: var(--primary);
   margin-top: 20px;
+  color: var(--color-text-primary);
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
+  .leftcolumn,
+  .rightcolumn {
     width: 100%;
     padding: 0;
+  }
+  .banner > span {
+    max-height: 100vh;
+    opacity: 0.1;
+    max-width: 100%;
+    line-height: 80%;
+    font-size: 20rem;
+    overflow-wrap: break-word;
   }
 }
