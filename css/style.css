@@ -170,7 +170,7 @@ body {
   align-items: flex-start;
   padding: 5%;
   height: 80%;
-  width: 80%;
+  width: 100%;
 }
 .apresentacao h1 {
   font-size: 10rem;
@@ -305,12 +305,48 @@ main {
     width: 100%;
     padding: 0;
   }
-  .banner > span {
-    max-height: 100vh;
-    opacity: 0.1;
-    max-width: 100%;
-    line-height: 80%;
-    font-size: 20rem;
-    overflow-wrap: break-word;
-  }
+
+.header{
+  height: 6vh;
+}
+.banner {
+  display: flex;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  color: var(--primary);
+  font-weight: 700;
+  margin-top: 10vh;
+  align-items: center;
+
+  background-image: url(../assets/LooperBG.svg);
+  background-repeat: no-repeat;
+  background-size: 10%;
+  
+}
+
+.banner > span {
+  max-height: 100vh;
+  opacity: 0.4;
+  max-width: 100%;
+  line-height: 80%;
+  font-size: 15rem;
+  overflow-wrap: break-word;
+}
+
+.apresentacao h1 {
+  font-size: 5rem;
+  color: var(--color-text-secundary);
+}
+
+.apresentacao h2 {
+  font-size: 3rem;
+  color: var(--color-text-primary);
+}
+
+.apresentacao h3 {
+  font-size: 2rem;
+  color: var(--color-text-primary);
+}
+
 }
