@@ -244,7 +244,7 @@ main {
   align-items: center;
   justify-content: center;
 
-  border-radius: 20px 20px 0 20px;
+  border-radius: 10px 10px 0 0;
 }
 
 .bannerImg img{
@@ -253,10 +253,10 @@ width: 100%;
 
 
 .fakeimg:hover img{
-width: 115%;
+width: 110%;
 }
 .bannerImg:hover img{
-  width: 115%;
+  width: 105%;
   }
 
 /* Add a card effect for articles */
@@ -291,14 +291,15 @@ width: 115%;
 }
 
 .nomeAutor {
-  background: var(--colorPink);
+  background: #6e2eaf;
   padding: 1%;
-  border-radius: 50px 0 50px 50px;
+  border-radius: 0 0  10px 0;
   display: flex;
-  align-self: flex-end;
-  justify-self: flex-end;
+  align-items: center;
+  justify-content: center;
   color: var(--color-text-primary);
-  font-weight: 600;
+  font-weight: 900;
+  height: 100%;
 }
 
 .card .sobreGrupo {
@@ -339,10 +340,6 @@ width: 115%;
 
 @media screen and (min-width: 800px) and (max-width: 1180px) {
 
-html{
-  font-size: 100%;
-}
-
   .leftcolumn,
   .rightcolumn {
     width: 100%;
@@ -354,8 +351,8 @@ html{
 }
 .banner {
 
-  background-size: 100%;
-  background-position: 200px;
+  background-size: 80%;
+  background-position: 300px;
 
 }
 
@@ -436,3 +433,92 @@ html{
 }
 
 
+/*  ESTILIZAÇÃO DO MODAL   */
+
+.div-btn{
+  height: 30px;
+  background: var(--gradient-pink) ;
+width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  border-radius:0 0 10px 10px ;
+
+}
+
+.div-btn button{
+  background-color: #ca4875;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  padding: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  border-radius:0 0 0 10px ;
+  cursor: pointer;
+  transition: background .3s ;
+
+}
+.div-btn button:hover {
+  background-color: #ca4875;
+  color: #00d2df;
+}
+
+
+
+.modal {
+  display: none; /* Domyślnie schowany */
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.8); 
+
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
+
+  transition-timing-function: ease-in;
+
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: var(--primary);
+  margin: 15% auto; 
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 95%;
+
+}
+
+.modal-content p{
+  text-align: justify;
+}
+
+img {
+  margin-top: 5px;
+width: 100%;
+border-radius: 5px;
+}
+
+.close {
+  color:var(--colorPink);
+  float: right;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
