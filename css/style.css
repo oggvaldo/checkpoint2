@@ -287,7 +287,6 @@ width: 110%;
 .card p {
   font-size: 1.2rem;
   color: var(--color-text-primary);
-  padding: 2% 0;
 }
 
 .nomeAutor {
@@ -492,7 +491,7 @@ width: 100%;
 .modal-content {
   background-color: var(--primary);
   margin: 15% auto; 
-  padding: 10px 20px;
+  padding: 10px 50px;
   border-radius: 10px;
   text-align: center;
   width: 95%;
@@ -501,6 +500,9 @@ width: 100%;
 
 .modal-content p{
   text-align: justify;
+  margin-top: 10px;
+  font-weight: 500;
+
 }
 
 img {
@@ -508,6 +510,7 @@ img {
 width: 100%;
 border-radius: 5px;
 }
+
 
 .close {
   color:var(--colorPink);
@@ -521,4 +524,26 @@ border-radius: 5px;
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modal-content h4{
+  color: var(--color-text-primary);
+  margin-top: 20px;
+  text-align: start;
+  font-size: 1.4rem;
+
+
+}
+
+.modal-content ul li{
+  color: var(--color-text-primary);
+  font-size: 1.2rem;
+  text-align: start;
+  margin-left: 50px;
+}
+.modal-content ol li{
+  color: var(--color-text-primary);
+  font-size: 1.2rem;
+  text-align: start;
+  margin-left: 50px;
 }
