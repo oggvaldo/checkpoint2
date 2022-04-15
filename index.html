@@ -35,8 +35,6 @@
 
     <main class="row">
       <section class="leftcolumn">
-
-
         <!--Aluno 1-->
         <article id="paradigmas" class="card">
           <h2>Paradigmas de Programação</h2>
@@ -49,12 +47,25 @@
           </div>
 
           <div class="div-btn">
-            <button id="btn" onclick="openModal('modal1');">Clique e leia</button>
+            <button id="btn" onclick="openModal('modal1');">
+              Clique e leia
+            </button>
             <div class="nomeAutor">Nome do aluno</div>
           </div>
 
           <div id="modal1" class="modal">
-            <div class="modal-content">
+            <div class="modal-content" style="
+            background-image: url('./assets/bgParadgmas.png');
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-position: right bottom;
+          "  >
+              <!-- style="
+                background-image: url('./assets/bgParadgmas.png');
+                background-repeat: no-repeat;
+                background-size: 50%;
+                background-position: right bottom;
+              " -->
               <span class="close">&times;</span>
               <img
                 src="assets/paradigmas.PNG"
@@ -62,19 +73,236 @@
               />
 
               <!-- COLOQUE SEU TEXTO AQUI -->
-
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                ducimus adipisci facilis enim unde recusandae, ex eaque, libero
-                fuga quas deleniti iusto illum reiciendis architecto optio
-                consequatur! Architecto, fugit sit.
+                Os paradigmas podem ser divididos em dois grandes grupos,
+                Imperativos e Declarativos.
               </p>
 
+              <p>
+                <strong>Imperativos:</strong> Especifica os passos a serem
+                seguidos. O programador instrui a máquina sobre como devem ser
+                computados os processos.
+              </p>
+
+              <p>
+                <strong>Declarativos:</strong> Especifica a relação ou função
+                entre os dados. É quando o programador apenas declara as
+                propriedades do resultado desejado, mas não informa a máquina
+                sobre como devem ser feitos os cálculos relacionados.
+              </p>
+              <p>
+                Os paradigmas se iniciaram com linguagens de dois tipos:
+                <i>Funcionais e Estruturadas</i>. A partir de 1964, dois
+                noruegueses inventaram a linguagem Simula, baseada em orientação
+                a objetos. Assim, temos os três grandes grupos que definem um
+                paradigma de programação. Paradigmas são conjunto de regras que
+                estabelecem fronteiras e descrevem como resolver esses
+                problemas.
+              </p>
+
+              <h3>Tipos de linguagem de programação quanto ao paradigma</h3>
+
+              <p>
+              Imperativo (específica os passos a serem seguidos) - O programador instrui a máquina sobre como devem ser computados os processos.
+              Dentro dos paradigmas de programação do tipo imperativo temos:
+              </p>
+              <p>
+              procedural: define procedimentos que contém passos computacionais a serem executados. 
+              A programação procedural é excelente para programação de uso geral e consiste numa lista de instruções para informar ao computador o que fazer passo a passo.
+              </p>
+              <p>
+              A maioria das linguagens de programação ensinadas na faculdade são procedurais, exemplos:
+              </p>
+              <ul>
+              <li>C</li>
+              <li>C++</li>
+              <li>Java</li>
+              <li>Pascal</li>
+              <li>Fortran </li>
+              <li>BASIC</li>
+              </ul>
+              
+              <h4>Quando é recomendado usar programação procedural:</h4>
+              <ul>
+              <li> Quando existir uma operação complexa que inclui dependências entre operações e quando há necessidade de visibilidade clara dos diferentes estados do aplicativo.</li>
+              <li> O programa é muito único e poucos elementos foram compartilhados.</li>
+              <li> O programa é estático e não se espera que mude muito ao longo do tempo.</li>
+              <li> Espera-se que nenhum ou apenas alguns recursos sejam adicionados ao projeto ao longo do tempo.</li>
+              </ul>
+              <p>
+              <strong>Estruturada:</strong> Este paradigma mostra que todos os programas possíveis podem ser reduzidos
+              a apenas três estruturas: seqüência, decisão e iteração. Tendo, na prática, sido
+              transformada na Programação modular, a Programação estruturada orienta os
+              programadores para a criação de estruturas simples em seus programas, usando as
+              subrotinas e as funções.
+              </p>
+              
+              <p>
+              <strong>Orientação a objetos:</strong> define objetos e relações entre eles. A programação orientada ao objeto (OOP) é o paradigma de programação mais popular devido aos seus benefícios, como a modularidade do código e a capacidade de associar diretamente problemas reais em termos de código.
+              </p>
+              <p>
+              Neste caso, o programa é escrito como uma coleção de classes e objetos para uma boa comunicação. A entidade menor e básica é objeto e todo tipo de cálculo é realizado apenas nos objetos.
+              </p>
+              <p>
+              É o paradigma mais popular e requisitado pelas empresas e as principais linguagens que o implementam são:
+              </p>
+              <ul>
+              <li> PHP</li>
+              <li>Java</li>
+              <li>Ruby</li>
+              <li>C#</li>
+              <li>Python</li>
+              </ul>
+              
+              <h4>Vale a pena utilizá-la quando:</h4>
+              
+              <p>
+              Vários programadores atuam juntos e não precisam entender tudo sobre cada componente.
+              Existe muito código a ser compartilhado e reutilizado.
+              São previstas muitas mudanças no projeto.
+              </p>
+              <p>
+              O paradigma de computação paralela (computação distribuida) consiste nas instruções sendo divididas entre vários processadores.
+              
+              Um sistema de computação paralela permite que muitos processadores executem um programa em menos tempo, dividindo-os.
+              </p>
+              
+              <h4> que suportam a abordagem de processamento paralelo:</h4>
+              
+              <ul>
+                  <li>C</li>
+                  <li>C++</li>
+              </ul>
+              
+              <h4>A abordagem de computação paralela geralmente é recomendada quando:</h4>
+              <p>
+              Você tem um sistema que possui mais de uma CPU ou processadores multinúcleo.
+              É preciso resolver problemas computacionais que podem levar até dias para serem resolvidos.
+              Se trabalha com simulação computacional, inteligência artificial ou modelagem que exija muitos cálculos dinâmicos.
+              </p>
+              
+              <p>
+              <strong>Declarativo</strong> (especifica a relação ou função entre os dados) - É quando o programador apenas declara as propriedades do resultado desejado, mas não informa a máquina sobre como devem ser feitos os cálculos relacionados. No grupo dos paradigmas de programação declarativos estão:
+              </p>
+              <p>
+              <strong>funcional:</strong> define funções matemáticas para realizar computações e evita dados ou estados mutáveis.
+              O paradigma de programação funcional tem suas raízes na matemática e é independente da linguagem.
+              </p>
+              <p>
+              A base desse paradigma é a execução de uma série de funções matemáticas. Você compõe seu programa de funções curtas. Todo o código está dentro de uma função. Todas as variáveis têm escopo definido para a função.
+              </p>
+              <p>
+              No paradigma de programação funcional, as funções não modificam nenhum valor fora do escopo dessa função e as próprias funções não são afetadas por nenhum valor fora do escopo.
+              Linguagens que usam este paradigma:
+              </p>
+              <ul>
+              <li>Haskell</li>
+              <li>Scala</li>
+              <li>Racket</li>
+              <li>Prolog</li>
+              <li>JavaScript</li>
+              </ul>
+              
+              <h4>Ideal para usar quando:</h4>
+              <p>
+              Tem matemática envolvida diretamente na programação.
+              </p>
+              
+              <h3>Paradigma de Lógica de Programação</h3>
+              <p>
+              O paradigma da programação com apontamento lógico não é composto de instruções. Ele é baseado em fatos e usa tudo o que sabe para criar um cenário onde todos esses fatos e cláusulas são verdadeiros e apontam para algum final.
+              </p>
+              <p>
+              Por exemplo, JavaScript é uma linguagem de programação, todas as linguagens de programação são importantes e, por dedução lógica, JavaScript é importante.
+              </p>
+              <p>
+              Linguagens com propriedades de lógica:
+              </p>
+              <ul>
+              <li>Absys</li>
+              <li>Ciao</li>
+              <li>Alice</li>
+              </ul>
+              
+              <h4>É interessante usar o paradigma de programação lógica quando:</h4>
+              
+              <p>
+              Você planeja trabalhar em projetos como prova de teoremas, sistemas de redução, sistemas de tipos entre outros.
+              </p>
+              
+              <h4>Tipos de linguagem de programação quanto à estrutura de tipos</h4>
+              <p>
+              <strong>Fracamente tipada:</strong> tipo das variáveis não é definido, podendo modificar-se.
+              </p>
+              <p>Ex: PHP</p>
+              
+              <p>
+              <strong>Fortemente tipada:</strong> tipo das variáveis é predefinido e imutável.
+              </p>
+              <p>Ex: Java, Ruby</p>
+              
+              <p>
+              <strong>Dinamicamente tipada:</strong> tipo das variáveis é definido em tempo de execução.
+              </p>
+              <p>
+              Ex: Python, Ruby
+              </p>
+              <p>
+              <strong>Estaticamente tipada:</strong> tipo das variáveis é definido em tempo de compilação.
+              </p>
+              <p>
+              Ex: Java, C
+              </p>
+              
+              <h4>Tipos de linguagem de programação quanto ao grau de abstração</h4>
+              <p>
+              O grau de abstração funciona como uma escala para linguagens: quanto mais baixo, mais próximo da linguagem de máquina, e quanto mais alto, mais próximo da linguagem dos seres humanos.
+              </p>
+              
+              <p>
+              Baixo nível: possui símbolos que representam o código de máquina propriamente. Ex: Assembly
+              </p>
+              <p>
+              Médio nível: possui símbolos que podem ser diretamente traduzíveis para código de máquina, mas também possui símbolos que precisam ser processados por um compilador. Ex: C#
+              </p>
+              <p>
+              Alto nível: possui símbolos complexos que necessitam de interpretação de um compilador antes de serem transformados em linguagem de máquina. Ex: Java, Javascript, Python, Ruby
+              <p>
+              <h4>Classificação em gerações das liguagens de programação</h4>
+
+              <p>    
+              A classificação das linguagens de programação em gerações é uma questão que apresenta divergências de autor para autor. Segundo Maclennan, as linguagens se dividem em cinco gerações com as seguintes características:
+              </p>
+              
+              <p>
+              Primeira geração - São linguagens onde suas estruturas de controle são aparentemente orientadas a máquina. As instruções condicionais não são aninhadas e dependem fortemente de instruções de desvio incondicional como o GOTO (O comando goto é uma estrutura de controle para salto de instruções. Sua sintaxe é, em geral: goto destino, onde destino pode ser um label ou um número, que representa um determinado endereço. As instruções passam a ser executadas no endereço apontado por destino). Uma linguagem típica desta geração é a linguagem Fortran.
+              </p>
+              <p>
+              Segunda geração - São linguagens onde as estruturas de controle são estruturadas de forma a minimizar ou dispensar o uso de instruções GOTO. A segunda geração elaborou melhor e generalizou diversas estruturas de controle das linguagens de primeira geração. Uma das grandes contribuições desta geração foi suas estruturas de nomes, que eram hierarquicamente aninhadas. Isto permitiu melhor controle de espaços de nomes e uma eficiente alocação dinâmica de memória. Uma linguagem típica desta geração é o Algol 60.
+              </p>
+              <p>
+              Terceira geração - São linguagens que dão ênfase a simplicidade e eficiência. Uma linguagem típica desta geração é a linguagem Pascal. As estruturas de dados desta geração mostram um deslocamento da máquina para a aplicação. As estruturas de controle são mais simples e eficientes.
+              </p>
+              <p>
+              Quarta geração - Esta geração é essencialmente o sinônimo para linguagens com abstração de dados. A maioria das linguagens desta geração focam na modularização e no encapsulamento. Uma linguagem típica desta geração é a linguagem Ada.
+              </p>
+              <p>
+              Quinta geração - Nesta geração, Maclennan agrupa diversos paradigmas como a orientação a objeto e o paradigma funcional, paradigma lógico.
+              </p>
+              <p>
+              Henri Bal e Dick Grune, já apresentam uma classificação em gerações de forma diferente, enfatizando mais o aspecto da aplicação. São elencadas 6 gerações.
+              </p>
+              <ol> 
+              <li> linguagens de montagem (assembly).</li>
+              <li> Linguagens procedurais.</li>
+              <li> Linguagens aplicativas.</li>
+              <li> Linguagens voltadas a Inteligência artificial como as linguagens lógicas (Prolog) e as linguagens funcionais (Lisp).</li>
+              <li>Redes neurais.</li>
+              </ol>             
               <!-- FINALIZE SEU TEXTO AQUI -->
             </div>
           </div>
         </article>
-
 
         <!--Aluno 2-->
         <article id="virtualizacao" class="card">
@@ -85,7 +313,9 @@
           </div>
 
           <div class="div-btn">
-            <button id="btn" onclick="openModal('modal2');">Clique e leia</button>
+            <button id="btn" onclick="openModal('modal2');">
+              Clique e leia
+            </button>
             <div class="nomeAutor">Nome do aluno</div>
           </div>
 
@@ -119,10 +349,10 @@
             <img src="assets/redes.PNG" alt="banner redes de computadores" />
           </div>
 
-          
-
           <div class="div-btn">
-            <button id="btn" onclick="openModal('modal3');">Clique e leia</button>
+            <button id="btn" onclick="openModal('modal3');">
+              Clique e leia
+            </button>
             <div class="nomeAutor">Nome do aluno</div>
           </div>
 
@@ -148,8 +378,6 @@
           </div>
         </article>
 
-
-
         <!--Aluno 4-->
         <article id="internet" class="card">
           <h2>Internet</h2>
@@ -158,7 +386,9 @@
             <img src="assets/internet.PNG" alt="banner internet" />
           </div>
           <div class="div-btn">
-            <button id="btn" onclick="openModal('modal4');">Clique e leia</button>
+            <button id="btn" onclick="openModal('modal4');">
+              Clique e leia
+            </button>
             <div class="nomeAutor">Nome do aluno</div>
           </div>
 
@@ -195,7 +425,9 @@
             />
           </div>
           <div class="div-btn">
-            <button id="btn" onclick="openModal('modal5');">Clique e leia</button>
+            <button id="btn" onclick="openModal('modal5');">
+              Clique e leia
+            </button>
             <div class="nomeAutor">Nome do aluno</div>
           </div>
 
@@ -229,13 +461,15 @@
             <img src="assets/etica_comp.PNG" alt="banner ética na computação" />
           </div>
           <div class="div-btn">
-            <button id="btn" onclick="openModal('modal6');">Clique e leia</button>
+            <button id="btn" onclick="openModal('modal6');">
+              Clique e leia
+            </button>
             <div class="nomeAutor">Nome do aluno</div>
           </div>
 
           <div id="modal6" class="modal">
             <div class="modal-content">
-              <span class="close" onclick="closeModal('modal6')">&times;</span>
+              <span class="close">&times;</span>
               <img
                 src="assets/etica_comp.PNG"
                 alt="banner paradigmas da computação"
@@ -254,7 +488,7 @@
             </div>
           </div>
         </article>
-
+      </section>
       <aside class="rightcolumn">
         <div class="card">
           <h2 class="sobreGrupo">Sobre o Grupo</h2>
