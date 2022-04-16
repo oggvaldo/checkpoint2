@@ -542,3 +542,17 @@ img {
   transition-timing-function: ease-in;
 }
 
+#segp{
+  height: max-content;
+  font-size:16px;
+}
+
+.segh1{
+  font-size: 24px;
+}
+
+.photo{
+  border-image-outset: 100px;
+
+
+}
