@@ -1,130 +1,770 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-/* Add a gray background color with some padding */
-body {
-  font-family: Arial;
-  padding: 20px;
-  background: #f1f1f1;
-}
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header id="top" class="header">
+      <h2>< CTD /></h2>
 
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: white;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-   background-color: white;
-   padding: 20px;
-   margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-</style>
-</head>
-<body>
-<div class="header">
-    <h2>Checkpoint 2</h2>
-  </div>
-  
-  <div class="row">
-    <div class="leftcolumn">
-      <div class="card">
-        <h2>Paradigmas de Programação</h2>
-        <h5>Aula 13</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Referência da notícia + texto de como a notícia se relaciona com o que vimos em sala </p>
+      <div>
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox" class="label">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+          <div class="ball"></div>
+        </label>
       </div>
-      <div class="card">
-        <h2>Virtualização</h2>
-        <h5>Aula 14</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Referência da notícia + texto de como a notícia se relaciona com o que vimos em sala </p>
+    </header>
+
+    <div class="banner">
+      <span translate="no">Certified Tech Developer</span>
+
+      <div class="apresentacao">
+        <h2>Olá, este é o</h2>
+        <h1>Checkpoint II</h1>
+        <h3>Introdução à Informática v.2</h3>
       </div>
     </div>
-    <div class="rightcolumn">
-      <div class="card">
-        <h2>Sobre o Grupo</h2>
-        <div class="fakeimg" style="height:100px;">Image</div>
-        <ul>
-            <li>Membro 1</li>
-            <li>Membro 2</li>
-            <li>Membro 3</li>
-            <li>Membro 4</li>
-            <li>Membro 5</li>
-            <li>Membro 6</li>
+
+    <main class="row">
+      <section class="leftcolumn">
+        <!--Aluno 1-->
+        <article id="paradigmas" class="card">
+          <h2>Paradigmas de Programação</h2>
+          <h5>Aula 14</h5>
+          <div class="bannerImg">
+            <img
+              src="assets/paradigmas.PNG"
+              alt="banner paradigmas da computação"
+            />
+          </div>
+
+          <div class="div-btn">
+            <button id="btn" onclick="openModal('modal1');">
+              Clique e leia
+            </button>
+            <div class="nomeAutor">Gabriel Azevedo Silva</div>
+          </div>
+
+          <div id="modal1" class="modal">
+            <div class="modal-content" style="
+            background-image: url('./assets/bgParadgmas.png');
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-position: right bottom;
+          ">
+
+              <span class="close">&times;</span>
+              <img
+                src="assets/paradigmas.PNG"
+                alt="banner paradigmas da computação"
+              />
+
+              <!-- COLOQUE SEU TEXTO AQUI -->
+              <p>
+                Os paradigmas podem ser divididos em dois grandes grupos,
+                Imperativos e Declarativos.
+              </p>
+
+              <p>
+                <strong>Imperativos:</strong> Especifica os passos a serem
+                seguidos. O programador instrui a máquina sobre como devem ser
+                computados os processos.
+              </p>
+
+              <p>
+                <strong>Declarativos:</strong> Especifica a relação ou função
+                entre os dados. É quando o programador apenas declara as
+                propriedades do resultado desejado, mas não informa a máquina
+                sobre como devem ser feitos os cálculos relacionados.
+              </p>
+              <p>
+                Os paradigmas se iniciaram com linguagens de dois tipos:
+                <i>Funcionais e Estruturadas</i>. A partir de 1964, dois
+                noruegueses inventaram a linguagem Simula, baseada em orientação
+                a objetos. Assim, temos os três grandes grupos que definem um
+                paradigma de programação. Paradigmas são conjunto de regras que
+                estabelecem fronteiras e descrevem como resolver esses
+                problemas.
+              </p>
+
+              <h3>Tipos de linguagem de programação quanto ao paradigma</h3>
+
+              <p>
+              Imperativo (específica os passos a serem seguidos) - O programador instrui a máquina sobre como devem ser computados os processos.
+              Dentro dos paradigmas de programação do tipo imperativo temos:
+              </p>
+              <p>
+              procedural: define procedimentos que contém passos computacionais a serem executados. 
+              A programação procedural é excelente para programação de uso geral e consiste numa lista de instruções para informar ao computador o que fazer passo a passo.
+              </p>
+              <p>
+              A maioria das linguagens de programação ensinadas na faculdade são procedurais, exemplos:
+              </p>
+              <ul>
+              <li>C</li>
+              <li>C++</li>
+              <li>Java</li>
+              <li>Pascal</li>
+              <li>Fortran </li>
+              <li>BASIC</li>
+              </ul>
+              
+              <h4>Quando é recomendado usar programação procedural:</h4>
+              <ul>
+              <li> Quando existir uma operação complexa que inclui dependências entre operações e quando há necessidade de visibilidade clara dos diferentes estados do aplicativo.</li>
+              <li> O programa é muito único e poucos elementos foram compartilhados.</li>
+              <li> O programa é estático e não se espera que mude muito ao longo do tempo.</li>
+              <li> Espera-se que nenhum ou apenas alguns recursos sejam adicionados ao projeto ao longo do tempo.</li>
+              </ul>
+              <p>
+              <strong>Estruturada:</strong> Este paradigma mostra que todos os programas possíveis podem ser reduzidos
+              a apenas três estruturas: seqüência, decisão e iteração. Tendo, na prática, sido
+              transformada na Programação modular, a Programação estruturada orienta os
+              programadores para a criação de estruturas simples em seus programas, usando as
+              subrotinas e as funções.
+              </p>
+              
+              <p>
+              <strong>Orientação a objetos:</strong> define objetos e relações entre eles. A programação orientada ao objeto (OOP) é o paradigma de programação mais popular devido aos seus benefícios, como a modularidade do código e a capacidade de associar diretamente problemas reais em termos de código.
+              </p>
+              <p>
+              Neste caso, o programa é escrito como uma coleção de classes e objetos para uma boa comunicação. A entidade menor e básica é objeto e todo tipo de cálculo é realizado apenas nos objetos.
+              </p>
+              <p>
+              É o paradigma mais popular e requisitado pelas empresas e as principais linguagens que o implementam são:
+              </p>
+              <ul>
+              <li> PHP</li>
+              <li>Java</li>
+              <li>Ruby</li>
+              <li>C#</li>
+              <li>Python</li>
+              </ul>
+              
+              <h4>Vale a pena utilizá-la quando:</h4>
+              
+              <p>
+              Vários programadores atuam juntos e não precisam entender tudo sobre cada componente.
+              Existe muito código a ser compartilhado e reutilizado.
+              São previstas muitas mudanças no projeto.
+              </p>
+              <p>
+              O paradigma de computação paralela (computação distribuida) consiste nas instruções sendo divididas entre vários processadores.
+              
+              Um sistema de computação paralela permite que muitos processadores executem um programa em menos tempo, dividindo-os.
+              </p>
+              
+              <h4> que suportam a abordagem de processamento paralelo:</h4>
+              
+              <ul>
+                  <li>C</li>
+                  <li>C++</li>
+              </ul>
+              
+              <h4>A abordagem de computação paralela geralmente é recomendada quando:</h4>
+              <p>
+              Você tem um sistema que possui mais de uma CPU ou processadores multinúcleo.
+              É preciso resolver problemas computacionais que podem levar até dias para serem resolvidos.
+              Se trabalha com simulação computacional, inteligência artificial ou modelagem que exija muitos cálculos dinâmicos.
+              </p>
+              
+              <p>
+              <strong>Declarativo</strong> (especifica a relação ou função entre os dados) - É quando o programador apenas declara as propriedades do resultado desejado, mas não informa a máquina sobre como devem ser feitos os cálculos relacionados. No grupo dos paradigmas de programação declarativos estão:
+              </p>
+              <p>
+              <strong>funcional:</strong> define funções matemáticas para realizar computações e evita dados ou estados mutáveis.
+              O paradigma de programação funcional tem suas raízes na matemática e é independente da linguagem.
+              </p>
+              <p>
+              A base desse paradigma é a execução de uma série de funções matemáticas. Você compõe seu programa de funções curtas. Todo o código está dentro de uma função. Todas as variáveis têm escopo definido para a função.
+              </p>
+              <p>
+              No paradigma de programação funcional, as funções não modificam nenhum valor fora do escopo dessa função e as próprias funções não são afetadas por nenhum valor fora do escopo.
+              Linguagens que usam este paradigma:
+              </p>
+              <ul>
+              <li>Haskell</li>
+              <li>Scala</li>
+              <li>Racket</li>
+              <li>Prolog</li>
+              <li>JavaScript</li>
+              </ul>
+              
+              <h4>Ideal para usar quando:</h4>
+              <p>
+              Tem matemática envolvida diretamente na programação.
+              </p>
+              
+              <h3>Paradigma de Lógica de Programação</h3>
+              <p>
+              O paradigma da programação com apontamento lógico não é composto de instruções. Ele é baseado em fatos e usa tudo o que sabe para criar um cenário onde todos esses fatos e cláusulas são verdadeiros e apontam para algum final.
+              </p>
+              <p>
+              Por exemplo, JavaScript é uma linguagem de programação, todas as linguagens de programação são importantes e, por dedução lógica, JavaScript é importante.
+              </p>
+              <p>
+              Linguagens com propriedades de lógica:
+              </p>
+              <ul>
+              <li>Absys</li>
+              <li>Ciao</li>
+              <li>Alice</li>
+              </ul>
+              
+              <h4>É interessante usar o paradigma de programação lógica quando:</h4>
+              
+              <p>
+              Você planeja trabalhar em projetos como prova de teoremas, sistemas de redução, sistemas de tipos entre outros.
+              </p>
+              
+              <h4>Tipos de linguagem de programação quanto à estrutura de tipos</h4>
+              <p>
+              <strong>Fracamente tipada:</strong> tipo das variáveis não é definido, podendo modificar-se.
+              </p>
+              <p>Ex: PHP</p>
+              
+              <p>
+              <strong>Fortemente tipada:</strong> tipo das variáveis é predefinido e imutável.
+              </p>
+              <p>Ex: Java, Ruby</p>
+              
+              <p>
+              <strong>Dinamicamente tipada:</strong> tipo das variáveis é definido em tempo de execução.
+              </p>
+              <p>
+              Ex: Python, Ruby
+              </p>
+              <p>
+              <strong>Estaticamente tipada:</strong> tipo das variáveis é definido em tempo de compilação.
+              </p>
+              <p>
+              Ex: Java, C
+              </p>
+              
+              <h4>Tipos de linguagem de programação quanto ao grau de abstração</h4>
+              <p>
+              O grau de abstração funciona como uma escala para linguagens: quanto mais baixo, mais próximo da linguagem de máquina, e quanto mais alto, mais próximo da linguagem dos seres humanos.
+              </p>
+              
+              <p>
+              Baixo nível: possui símbolos que representam o código de máquina propriamente. Ex: Assembly
+              </p>
+              <p>
+              Médio nível: possui símbolos que podem ser diretamente traduzíveis para código de máquina, mas também possui símbolos que precisam ser processados por um compilador. Ex: C#
+              </p>
+              <p>
+              Alto nível: possui símbolos complexos que necessitam de interpretação de um compilador antes de serem transformados em linguagem de máquina. Ex: Java, Javascript, Python, Ruby
+              <p>
+              <h4>Classificação em gerações das liguagens de programação</h4>
+
+              <p>    
+              A classificação das linguagens de programação em gerações é uma questão que apresenta divergências de autor para autor. Segundo Maclennan, as linguagens se dividem em cinco gerações com as seguintes características:
+              </p>
+              
+              <p>
+              Primeira geração - São linguagens onde suas estruturas de controle são aparentemente orientadas a máquina. As instruções condicionais não são aninhadas e dependem fortemente de instruções de desvio incondicional como o GOTO (O comando goto é uma estrutura de controle para salto de instruções. Sua sintaxe é, em geral: goto destino, onde destino pode ser um label ou um número, que representa um determinado endereço. As instruções passam a ser executadas no endereço apontado por destino). Uma linguagem típica desta geração é a linguagem Fortran.
+              </p>
+              <p>
+              Segunda geração - São linguagens onde as estruturas de controle são estruturadas de forma a minimizar ou dispensar o uso de instruções GOTO. A segunda geração elaborou melhor e generalizou diversas estruturas de controle das linguagens de primeira geração. Uma das grandes contribuições desta geração foi suas estruturas de nomes, que eram hierarquicamente aninhadas. Isto permitiu melhor controle de espaços de nomes e uma eficiente alocação dinâmica de memória. Uma linguagem típica desta geração é o Algol 60.
+              </p>
+              <p>
+              Terceira geração - São linguagens que dão ênfase a simplicidade e eficiência. Uma linguagem típica desta geração é a linguagem Pascal. As estruturas de dados desta geração mostram um deslocamento da máquina para a aplicação. As estruturas de controle são mais simples e eficientes.
+              </p>
+              <p>
+              Quarta geração - Esta geração é essencialmente o sinônimo para linguagens com abstração de dados. A maioria das linguagens desta geração focam na modularização e no encapsulamento. Uma linguagem típica desta geração é a linguagem Ada.
+              </p>
+              <p>
+              Quinta geração - Nesta geração, Maclennan agrupa diversos paradigmas como a orientação a objeto e o paradigma funcional, paradigma lógico.
+              </p>
+              <p>
+              Henri Bal e Dick Grune, já apresentam uma classificação em gerações de forma diferente, enfatizando mais o aspecto da aplicação. São elencadas 6 gerações.
+              </p>
+              <ol> 
+              <li> linguagens de montagem (assembly).</li>
+              <li> Linguagens procedurais.</li>
+              <li> Linguagens aplicativas.</li>
+              <li> Linguagens voltadas a Inteligência artificial como as linguagens lógicas (Prolog) e as linguagens funcionais (Lisp).</li>
+              <li>Redes neurais.</li>
+              </ol>             
+              <!-- FINALIZE SEU TEXTO AQUI -->
+            </div>
+          </div>
+        </article>
+
+        <!--Aluno 2-->
+        <article id="virtualizacao" class="card">
+          <h2>Virtualização</h2>
+          <h5>Aula 14</h5>
+          <div class="bannerImg">
+            <img src="assets/virtualizacao.PNG" alt="banner virtualização"/>
+          </div>
+
+          <div class="div-btn">
+            <button id="btn" onclick="openModal('modal2');">
+              Clique e leia
+            </button>
+            <div class="nomeAutor">Glaucia</div>
+          </div>
+
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img
+                src="assets/virtualizacao.PNG"
+                alt="banner paradigmas da computação"
+              />
+
+              <!-- COLOQUE SEU TEXTO AQUI -->
+
+              <p>
+                <h3><strong> O que é virtualização?</strong></h3>
+                
+                <p> O termo virtualização tem origem no conceito “virtual”, ou seja, algo abstrato que simula as características de algo real. Provavelmente você começou a ouvir falar sobre virtualização com mais frequência nos últimos anos, mas a realidade é que esse conceito surgiu na década de 1960, sendo mais divulgado na década posterior.
+
+                  Entretanto, as limitações tecnológicas da época impediram que maiores avanços pudessem ser realizados em cima dessa inovadora tecnologia para a época. Mas com a chegada da internet e a possibilidade de processar informações e executar operações remotamente, foi aberto um caminho promissor para a virtualização e seus recursos.
+                  
+                  Em outras palavras, podemos afirmar que virtualização é a tecnologia que permite que diversas aplicações e sistemas operacionais sejam processados em uma mesma máquina.
+                  
+                  Por exemplo: um usuário utiliza o Windows em seu computador, mas deseja utilizar um software que está disponível apenas para o Linux. Graças à virtualização, esse usuário pode executar uma versão de qualquer sistema operacional (incluindo seus aplicativos) em seu próprio computador, sem necessariamente ter que o instalar fisicamente.
+                  
+                  Basicamente, é possível utilizar diversos computadores e seus recursos dentro de uma mesma máquina, no âmbito digital, sem qualquer perda de desempenho, produtividade ou eficiência.
+                </p>
+
+                <h3> <strong>Como funciona o processo de virtualização? </strong></h3>
+                <p>  
+                  Uma solução de virtualização tem tanto o convidado ou hóspede quanto o hospedeiro. É possível compreender o hospedeiro como se fosse um sistema operacional que é colocado em prática por uma máquina física. Já o convidado é o sistema virtualizado que precisa ser efetuado pelo hospedeiro.
+
+                  Pois bem, a virtualização vai acontecer quando ambos os fatores existirem. A maneira como os hóspedes e hospedeiros realizam seu trabalho vai variar de acordo com a solução.
+
+                  As máquinas virtuais, em ambientes corporativos que apresentam alta disponibilidade, vão ficar guardadas em uma SAN, isto é, em um local de armazenamento que é compartilhado por todos os servidores. Tal espaço é conhecido como storage. Lembrando que se a SAN for virtual, o nome que vai receber é VSAN.
+
+                  Para as corporações, a possibilidade de fazer o gerenciamento dos discos por meio de apenas um ponto significa um grande benefício, garantindo que se realize uma distribuição de desempenho bem mais regular e que sejam determinadas prioridades entre os sistemas instalados.
+                </p>
+
+                <h3> <strong>Quais são as principais diferenças entre a virtualização e a computação na nuvem? </strong></h3>
+
+                <p> 
+                  Quando a escolha é um projeto de computação na nuvem, a organização migra plataformas de e-mail, arquivos, dados etc. para um servidor que está fora da empresa, ou seja, um data center que fica com a função de controlar todas as atividades ligadas à segurança dos dados dos clientes e pela manutenção. No entanto, esse servidor depende da virtualização para que possa funcionar. Por que isso acontece?
+
+                  Bom, a computação na nuvem é definida como algo que está relacionado à virtualização, sendo resultado da manipulação do hardware por meio de um software específico.
+
+                  Em outras palavras, um data center que tem grande capacidade e é capaz de dividir o hardware, a partir de um software, em várias partículas que permitem que plataformas e sistemas operacionais distintos sejam usados na mesma máquina. Tal possibilidade de desmembrar um hardware é o que garante o armazenamento de dados de diferentes clientes da computação na nuvem em um mesmo data center.
+
+                  Nota-se que a virtualização é parte fundamental para a computação na nuvem, certo? Mas, então, onde fica a confusão entre ambos? Bem, a confusão acontece porque um conceito está ligado diretamente ao outro, embora ofereçam diferentes serviços.
+
+                  Enquanto a computação na nuvem garante a redução de custos com a arquitetura de sistemas e a facilidade para os clientes, a virtualização disponibiliza facilidades relacionadas à infraestrutura, assegurando que estruturas bem grandes — que teriam boa parte perdida — sejam utilizadas completamente a partir da fragmentação para o uso de vários sistemas operacionais.
+
+                  A virtualização, portanto, pode ser considerada um produto, uma vez que é possível adquirir soluções por meio de um software. Já a computação na nuvem é um conceito de arquitetura de TI. Contudo, os serviços oferecidos pela nuvem são totalmente correlacionados à virtualização para as soluções de software e também para ambientes mobile.
+
+                  Por apresentarem conceitos bastante interligados e extensos, é preciso analisar cada tecnologia para que não fique confuso e para entender quais são os propósitos e necessidades das empresas que cada uma atende.
+
+                </p>
+
+                <h3> <strong>Quais são os tipos de virtualização mais usados em negócios? </strong></h3>
+                O conceito de virtualização é tão abrangente que existem várias aplicações práticas para negócios em todos os setores e tamanhos. Veja os três tipos de virtualização mais comuns em empresas:
+
+              Virtualização de servidores
+              Esse processo, bastante comum na entrega de provedores de nuvem, significa compartimentar um servidor físico em múltiplos servidores lógicos, que agem de forma completamente independente.
+
+              Assim, é possível dividir o custo e os benefícios de uma infraestrutura de TI entre várias instâncias, sem qualquer perda de performance ou segurança.
+
+              Virtualização de desktops
+              Enquanto a virtualização de servidores trata da estrutura da empresa, virtualizar apenas os desktops é uma forma de aumentar a eficiência do negócio no lado dos usuários finais.
+
+              Nesse caso, virtualiza-se apenas os sistemas operacionais que rodam diretamente nos servidores, mas são disponibilizados para uso no terminal — computadores, notebooks e até tablets e smartphones.
+
+              Esse tipo de virtualização permite maior flexibilidade de estrutura e produtividade. Já que o sistema não roda nativamente na máquina, ela não precisa de tantos recursos para ser útil. É possível, por exemplo, utilizar o Windows completo em um celular.
+
+              Virtualização de aplicações
+              Mas nem sempre os colaboradores da empresa precisam virtualizar um sistema inteiro para serem produtivos, focando apenas no programa que utilizam para realizarem seu trabalho.
+
+              No modelo de virtualização de aplicações, o software roda no servidor, assim como no caso dos desktops, mas pode ser acessado em qualquer máquina ou sistema. O uso mais comum desse modelo é o de entrega de software como serviço, em que o usuário acessa e utiliza a aplicação pela internet e, por isso, consegue ser produtivo a qualquer hora e lugar.
+
+              <h3> <strong>Quais são as vantagens da virtualização? </strong></h3>
+
+
+              Entre as vantagens que a virtualização tem a oferecer para as empresas, estão:
+
+              Redução do consumo de energia
+              É comum que em empresas existam diversos computadores para desempenhar funções específicas. Por exemplo, um computador para armazenar o banco de dados, outro para lidar com as funções de impressão de documentos e outro para utilizar o software de gestão financeira.
+
+              A virtualização permite que todas as funções sejam desempenhadas em apenas uma máquina, reduzindo exponencialmente o consumo de energia.
+
+              Aumento da produtividade
+              Como a virtualização torna um sistema ou aplicação disponível em qualquer máquina, o negócio consegue se libertar da produtividade limitada ao escritório e investir em novos modelos baseados em resultados.
+
+              Um desses exemplos é a introdução do trabalho remoto, que vem transformando a relação entre funcionários e empresas em todo o mundo.
+
+              Outra vantagem é a facilidade de atualização das aplicações e da sua performance nas máquinas. Em vez de se preocupar com cada instância do programa em cada terminal, hoje é possível trabalhar de forma centralizada para oferecer as ferramentas mais atuais com o melhor desempenho possível — facilitando e impulsionando o trabalho dos colaboradores.
+
+              Otimização de gerenciamento
+              Essa centralização da estrutura também ajuda em todo o gerenciamento da empresa. O computador principal (máquina física) pode desempenhar a função de servidor e gerenciar diversas outras máquinas virtuais.
+
+              Melhoria de processos
+              Com uma gestão integrada e centralizada e a libertação do sistema de dentro da empresa, é possível apostar de vez na transformação digital.
+
+              A reestruturação de processos nesse cenário vai permitir mais inteligência no uso de dados, mais colaboração entre os funcionários, otimização de tarefas rotineiras e a conversão de agilidade em qualidade de entrega.
+
+              Otimização do espaço físico
+              Além de reduzir o consumo de energia, o fato de não ser preciso utilizar vários computadores para realizar as tarefas operacionais da empresa permite que o espaço físico necessário para alocação seja muito menor.
+
+              Integração de hardware
+              A virtualização permite que até o hardware seja simulado de forma virtual e integrado a diversas máquinas simultaneamente, o que reduz significativamente o custo com aquisição de equipamentos que, muitas vezes, acabam sendo parcialmente utilizados, consequentemente reduzindo também o consumo de energia.
+
+              Além de ser uma forma sustentável de gerir os processos operacionais de uma empresa.
+
+              Redução de custos
+              Utilizando aplicações virtuais, é possível reduzir custos com:
+
+              consumo de energia;
+              aquisição de hardware e software;
+              manutenção;
+              alocação;
+              mão de obra especializada.
+              Variedade de plataformas
+              A virtualização permite que o usuário teste programas, drivers, redistribua alocação de memória, resolva questões de incompatibilidade entre sistemas operacionais e programas e solucione conflitos entre aplicativos que utilizam versões diferentes de uma mesma DLL.
+
+              Segurança
+              Apesar de serem utilizadas em uma mesma máquina física, cada máquina virtual funciona de forma independente em relação às demais. O que significa que caso ocorra um problema com uma máquina, todas as outras estarão seguras.
+
+              Por todos esses benefícios e pelo avanço da tecnologia dentro do escritório, a virtualização é um caminho sem volta para empresas que querem crescer e se consolidar em um novo mercado digital.
+
+              Portanto, agora que você já entende melhor o que é, quais são as vantagens e quais são os tipos de virtualização, está na hora de apostar na tecnologia e reformular sua implementação no negócio.
+
+              <!-- FINALIZE SEU TEXTO AQUI -->
+            </div>
+          </div>
+        </article>
+
+        <!--Aluno 3-->
+        <article id="redes" class="card">
+          <h2>Redes de computadores</h2>
+          <h5>Aula 16</h5>
+          <div class="bannerImg">
+            <img src="assets/redes.PNG" alt="banner redes de computadores" />
+          </div>
+
+          <div class="div-btn">
+            <button id="btn" onclick="openModal('modal3');">
+              Clique e leia
+            </button>
+            <div class="nomeAutor">Alícia de Oliveira</div>
+          </div>
+
+          <div id="modal3" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img
+                src="assets/redes.PNG"
+                alt="banner paradigmas da computação"
+              />
+
+              <!-- COLOQUE SEU TEXTO AQUI -->
+
+              <h3> O que são Redes de Computadores?</h3>
+              <p>
+                Rede de computadores é uma malha que interliga milhares de sistemas computacionais para a transmissão de dados, ou em outras palavras, é um conjunto de dispositivos independentes capazes de se comunicar eletronicamente entre si, compartilhando recursos e trocando informações de todos os tipos, com o objetivo de encurtar distâncias, garantir confiabilidade e disponibilidade das informações , aumentar a velocidade de transmissão de dados e reduzir custos.
+              </p>
+              <h3>Classificação das Redes</h3>
+              <ul> 
+                <li>Pelo Alcance (Em relação à sua extensão geográfica. Ex.: LAN, MAN, WAN, WLAN, WMAN, SAN, PAN, etc.).</li>
+                <li>Pelo método físico usado para sua conexão (Ex.: Mídia Guiada ou Mídia Não Guiada).</li>
+                <li>Pela Autenticação (Ex.: Rede Pública ou Rede Privada).</li>
+                <li>Pelo seu grau de difusão (Ex.: Intranet, Extranet, Internet).</li>
+              </ul> 
+              <ul>
+              <li><h4>Pelo Alcance (Alguns Exemplos)</h4></li>
+              <p>
+                <strong>PAN (Personal Area Network)</strong>: São usadas para que dispositivos se comuniquem dentro de uma distância bastante limitada. Um exemplo disso são as redes Bluetooth e UWB.
+              </p>
+              <p>
+              <strong>LAN (Local Area Network)</strong>: Interligam computadores presentes dentro de um mesmo espaço físico. Isso pode acontecer dentro de uma empresa, de uma escola ou dentro da sua própria casa, sendo possível a troca de informações e recursos entre os dispositivos participantes.
+              </p>
+              <p>
+                <strong>MAN (Metropolitan Area Network)</strong>: Imaginemos, por exemplo, que uma empresa possui dois escritórios em uma mesma cidade e deseja que os computadores permaneçam interligados. Para isso existe a Rede Metropolitana, que conecta diversas Redes Locais dentro de algumas dezenas de quilômetros.
+              </p>
+              <p>
+                <strong>WAN (Wide Area Network)</strong>: A Rede de Longa Distância vai um pouco além da MAN e consegue abranger uma área maior, como um país ou até mesmo um continente.
+              </p>
+              <p>
+                <strong>SAN (Storage Area Network)</strong>=: São utilizadas para fazer a comunicação de um servidor e outros computadores, ficando restritas a isso.
+              </p>
+              <li><h4>Pelo método físico usado para sua conexão:</h4></li>
+              <p>
+                <strong>Mídia Guiada:</strong> Conecta dispositivos usando sistemas de cabos físicos, como par trançado, coaxial ou fibra óptica. A vantagem disso é que eles perdem menos sinal e há menos ruído, por outro lado, a desvantagem é dada pelo desconforto que resulta de toda a instalação em cada área.
+              </p>
+              <p>
+                <strong>Mídia Não Guiada:</strong> Sua conexão é estabelecida por meio de sistemas dispersos e abrangentes, como ondas de rádio, sinal infravermelho ou microondas - por exemplo, sistemas de satélite e wi-fi. Eles são um pouco mais lentos, mas muito mais confortáveis e práticos.
+              </p>
+              <li><h4>Pela Autenticação:</h4></li>
+              <p>
+                <strong>Rede Privada</strong> : Só pode ser utilizada por algumas pessoas que possuam o código de acesso pessoal com o qual está configurada.
+              </p>
+              <p>
+                <strong>Rede Pública</strong> : Pode ser utilizada por qualquer pessoa desde que não necessite de senha para acessá-la.
+              </p>
+              <li><h4>Pelo seu grau de difusão:</h4></li>
+              <p>
+                <strong>Intranet</strong> : Rede privada de computadores que usa tecnologia da Internet para compartilhar dentro de uma organização parte de seus sistemas de informação e sistemas operacionais.
+              </p>
+              <p>
+                <strong>Extranet</strong> : Rede privada usada para compartilhar com segurança parte das informações de uma organização com fornecedores, compradores, parceiros, clientes ou qualquer outro negócio ou organização.
+              </p>
+              <p>
+                <strong>Internet</strong> : É um conjunto descentralizado de redes de comunicação interconectadas que utilizam a família de protocolos TCP/IP, garantindo que as redes físicas heterogêneas que a compõem funcionem como uma única rede lógica, com abrangência mundial.
+              </p>
+            </ul>
+            <div>
+              <img src="/assets/conceitos.png" alt="Conceitos redes de computadores">
+            </div>
+
+              <!-- FINALIZE SEU TEXTO AQUI -->
+            </div>
+          </div>
+        </article>
+
+        <!--Aluno 4-->
+        <article id="internet" class="card">
+          <h2>Internet</h2>
+          <h5>Aula 17</h5>
+          <div class="bannerImg">
+            <img src="assets/internet.PNG" alt="banner internet" />
+          </div>
+          <div class="div-btn">
+            <button id="btn" onclick="openModal('modal4');">
+              Clique e leia
+            </button>
+            <div class="nomeAutor">Hugo Leandro/div>
+          </div>
+
+          <div id="modal4" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img
+                src="assets/internet.PNG"
+                alt="banner paradigmas da computação"
+              />
+
+              <!-- COLOQUE SEU TEXTO AQUI -->
+              
+              <h1 class="segh1">O que é?</h1>
+              <br>
+
+              <div id="segp">
+               
+                Nada mais nada menos do que um aglomerado de milhões e milhões de computadores em todo o mundo, interligados pelo protocolo TC/IP (o famoso IP adress), que ao mesmo tempo permite o acesso e a transferência de dados; a Internet se revela como um grande fator de comunicação, integração social, armazenamento e propagação de informações de todos os tipos e globalização de produtos e serviços. Assim, a Internet é formada por computadores comuns e por outros, especiais, os servidores, máquinas de alta capacidade, com grande poder de processamento e conexões velozes, controladas por universidades, empresas e órgãos do governo.
+
+               <br><br>
+
+               <div class="image">
+                 <img src="/assets/internet_coisas.png" alt="Internet">
+               </div>      
+            
+              </div>
+
+              <br><br>
+
+              <h1 class="segh1">Efeitos e Consequências</h1>
+
+              <br>
+
+              <div id="segp">
+              
+                <div class="image">
+                  <img src="/assets/aliena2.png" alt="Alienacao2">
+                </div>
+                <br>                
+                A Internet veio para revolucionar a forma de pensar da sociedade. Porém, à medida que essa necessidade pelo uso da internet se torna algo incontrolável, acabamos por nos tornar cada vez mais dependentes dela, e ficamos alienados com a mesma. Essa alienação provocada pela Internet, é talvez o principal malefício.
+                As mudanças que essa tecnologia causa no funcionamento da mente e do corpo humano são estudadas a sério por vários pesquisadores (de diversas áreas, como antropologia e psiquiatria). Alguns acham que a Internet nos faz pensar mais rápido e de modo não-linear; outros, mais pessimistas, dizem que a tecnologia está nos tornando viciados em estímulos e incapazes de processar grandes blocos de informação, e recomendam mais calma.
+                <br><br>
+                <strong><i>Vantagens</i></strong>: <i>Cultura do conhecimento</i> (democratização da educação), <i>Conveniência</i> (rápido, fácil e a poucos cliques), <i>Inclusão social</i>, <i>Eliminação de fronteiras</i> (mesmo que de maneira virtual, temos acesso "livre" a todo o globo), <i>Geração de oportunidades</i>.
+                <br>
+                <strong><i>Desvantagens</i></strong>: <i>Privacidade</i> (pessoas e informações expostas mais facilmente; através de fotos, vídeos e outros dados), <i>Anonimato e a ilegalidade</i> (ambiente propício para a prática de crimes, ofensas e atividades ilegais em geral), <i>Abordagem superficial</i> (diferente de um livro tradicional, na web a abordagem de determinado assunto não necessariamente terá início, meio e fim; muitas informações ficam "no ar"), <i>Perda do foco</i> (links de imagens, vídeos, propagandas, notícias paralelas, entre outros tipos de entretenimento que te fazem querer sair do foco "mesmo que por um instante"), <i>Custos e dificuldades de acesso</i>.
+                <br>
+                <div class="image">
+                  <img src="/assets/aliena.png" alt="Alienacao">
+                </div>
+                            
+              </div>
+              <br><br>
+
+              <h1 class="segh1">Formas de Conexão à Internet</h1>
+
+              <br><br>
+
+              <h3 class="segh1"><i>Basicamente existem três formas de acesso à internet:</i>  </h3>
+              <br>
+              <div id="segp">
+                <li><strong>Acesso discado:</strong> Acesso através da linha telefónica convencional (também chamado de acesso via Dial-Up), produzindo uma velocidade de acesso muito baixa e um custo elevado.</li><br>
+                <li><strong>Acesso banda larga (ADSL):</strong> Acesso através de modernos equipamentos (modens) utilizando o cabo do telefone e não a linha em si, isto proporciona uma velocidade de acesso muito boa e um custo baixo.</li><br>
+                <li><strong>Acesso por Rede Privada ou Corporativa:</strong> Acesso realizado através de uma rede já existente (intranet).</li>
+              </div>  
+
+
+
+            
+
+
+
+              <!-- FINALIZE SEU TEXTO AQUI -->
+            </div>
+          </div>
+        </article>
+
+        <!--Aluno 5-->
+        <article id="seg_informatica" class="card">
+          <h2>Segurança da Informática</h2>
+          <h5>Aula 23</h5>
+          <div class="bannerImg">
+            <img
+              src="assets/seg_informatica.PNG"
+              alt="banner segurança da informação"
+            />
+          </div>
+          <div class="div-btn">
+            <button id="btn" onclick="openModal('modal5');">
+              Clique e leia
+            </button>
+            <div class="nomeAutor">Lucas Lopes</div>
+          </div>
+
+          <div id="modal5" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img
+                src="assets/seg_informatica.PNG"
+                alt="banner paradigmas da computação"
+              />
+
+              <!-- COLOQUE SEU TEXTO AQUI -->
+              <h1 class="segh1">Segurança Informática</h1>
+
+              <div id="segp">
+                A Segurança Informática, a cada dia, passou a ter grande importância para as empresas que utilizam Tecnologia da Informação nos seus processos diários de tomada de decisão.<br><br>
+                
+
+                <li> as empresas possuem suas informações processadas e armazenadas no ambiente computacional</li>
+                <li>as empresas dependem do ambiente computacional para realizarem seus negócios</li><br>
+
+
+                Segurança Informática é muito mais que ter um software antivírus instalado ou utilizar um firewall que impeça o ataque de agentes indevidos a sua rede corporativa. Segurança da Informação está relacionada a proteção de dados, a segurança física, a segurança ambiental, o alinhamento da Tecnologia da Informação com os objetivos e a missão da empresa, dentre outras funções essenciais para a continuidade dos negócios. <br><br>
+                <div class="image">
+                  <img src="https://www.acif.org.br/wp-content/uploads/2019/02/Plano-de-neg%C3%B3cio.jpg" alt="IMG">
+                </div>
+                
+                A informação é o bem mais precioso para uma empresa/indivíduo, sendo a principal fonte para as tomadas de decisão. Qualquer conteúdo que seja gerado pela empresa por meio de suas operações diárias, seja pelas transações de compra e venda, os registros de atividades dos funcionários ou qualquer outro conteúdo que necessite ser armazenamento. <br><br>
+                
+                
+                Nos dias atuais, a informação passou a ser gerada na maioria das transações por meios digitais. Dessa forma, a segurança da informação existe para determinar o que pode ser afetado caso ocorram problemas relacionados a perda de acesso, o roubo de dados, a indisponibilidade de serviços, dentre outros eventos que podem interferir o funcionamento correto das atividades da empresa.
+              </div>
+
+              
+              <!-- FINALIZE SEU TEXTO AQUI -->
+            </div>
+          </div>
+        </article>
+
+        <!--Aluno 6-->
+        <article id="etica" class="card">
+          <h2>Ética na computação</h2>
+          <h5>Aula 13</h5>
+          <div class="bannerImg">
+            <img src="assets/etica_comp.PNG" alt="banner ética na computação" />
+          </div>
+          <div class="div-btn">
+            <button id="btn" onclick="openModal('modal6');">
+              Clique e leia
+            </button>
+            <div class="nomeAutor">Nome do aluno</div>
+          </div>
+
+          <div id="modal6" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img
+                src="assets/etica_comp.PNG"
+                alt="banner paradigmas da computação"
+              />
+
+              <!-- COLOQUE SEU TEXTO AQUI -->
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                ducimus adipisci facilis enim unde recusandae, ex eaque, libero
+                fuga quas deleniti iusto illum reiciendis architecto optio
+                consequatur! Architecto, fugit sit.
+              </p>
+
+              <!-- FINALIZE SEU TEXTO AQUI -->
+            </div>
+          </div>
+        </article>
+      </section>
+      <aside class="rightcolumn">
+        <div class="card">
+          <h2 class="sobreGrupo">Sobre o Grupo</h2>
+          <h5>Componentes</h5>
+          <ol>
+            <li>Gabriel Azevedo Silva</li>
+            <li>Alícia de Oliveira</li>
+            <li>Douglas Araújo</li>
+            <li>Glaucia Ximenes</li>
+            <li>Lucas Lopes</li>
+            <li>Hugo Leandro</li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3>Popular Post</h3>
+          <div class="fakeimg">
+            <a href="#redes">
+              <img src="assets/redes.PNG" alt="banner etica na informação" />
+            </a>
+          </div>
+
+          <div class="fakeimg">
+            <a href="#internet">
+              <img src="assets/internet.PNG" alt="banner internet" />
+            </a>
+          </div>
+
+          <div class="fakeimg">
+            <a href="#paradigmas">
+              <img
+                src="assets/paradigmas.PNG"
+                alt="banner segurança da informação"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Siga-nos!</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/oggvaldo"
+                >https://github.com/oggvaldo</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/AliciaOliveiras">https://github.com/AliciaOliveiras</a>
+            </li>
           </ul>
-      </div>
-      <div class="card">
-        <h3>Popular Post</h3>
-        <div class="fakeimg">Image</div><br>
-        <div class="fakeimg">Image</div><br>
-        <div class="fakeimg">Image</div>
-      </div>
-      <div class="card">
-        <h3>Siga-nos!</h3>
-        <ul>
-            <li><a href="https://github.com/oggvaldo">https://github.com/oggvaldo</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  
-  <div class="footer">
-    <h2>Digital House</h2>
-  </div>
+        </div>
+      </aside>
+    </main>
 
-</body>
+    <footer class="footer">
+      <h2>Digital House</h2>
+    </footer>
+
+    <!--Script interação no site-->
+    <script src="js/script.js"></script>
+  </body>
 </html>
