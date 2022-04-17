@@ -27,7 +27,10 @@ O formato da página é livre, porém será disponibilizado um template para aux
 5. Todos os integrantes do grupo devem estar como colaboradores e realizarem pelo menos um commit com uma alteração relevante (adição de um texto, correção de alguma característica da página ou inserção da imagem em cada um dos tópicos).
         <details>
         <summary>Colaboradores </summary>
-        <img src="home/gabazevdo/Imagens/tse.png">
+       
+	![tse](https://user-images.githubusercontent.com/16105546/163696298-6e4e66a9-9f36-40ef-9fec-dec58a1a693a.png)
+
+	
         </details>
 
 ---
